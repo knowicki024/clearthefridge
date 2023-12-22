@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# CLEAR THE FRIDGE!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CREATED BY: Steven M.
+            Zaquari A.
+            Katie N.
 
-## Available Scripts
+This app will help keep your fridge organized and updated by keeping track of inventory. It allows the user to clear bad food out once its expired, keep track of expiration dates, search for items in your inventory, and add new groceries. 
 
-In the project directory, you can run:
+FIGMA LINK : "https://www.figma.com/file/9ScI1YBCbWa6w76NyHkcbz/Untitled?type=whiteboard&node-id=0-1&t=5e1E7s8pnLvVWf5g-0"
 
-### `npm start`
+GITHUB REPO: "https://github.com/knowicki024/phase-2-project"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+TRELLO BOARD: "https://trello.com/b/vJ4rF7eM/phase-2-project"
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# COMPONENTS
 
-### `npm test`
+    App component --GP
+    New Food Form component --P
+    Page component --P 
+    Search component --CH
+    Food List component --CH/P
+    Food Item component --GC
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# GROCERY INDEX
+    name 
+    image -- EMOJI? 
+    experation/make date -- good to use / need to use / BAD 
+    category 
 
-### `npm run build`
+# REACT ROUTERS 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Home Page  --- (rootRoute)
+    Food Add Form --- /food/:id/add 
+    food list --- /food
+    food detail --- /food/:id
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# DB.JSON EXAMPLE 
+```{
+    "Groceries" : [
+        {
+            "id": "",
+            "name": "",
+            "category": "",
+            "image" : "",
+            "purchase_date": "",
+            "spoiled" : "true or false", 
+            "description": ""
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        }
+    ]
+}``` 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+CRUD COMPONENTS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    GET request to API of groceries 
+        Render fridge componenets 
 
-## Learn More
+    POST grocery haul (add new groceries)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    PATCH -- edit a note for grocery. 
+            
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    DELETE if groceries are bad/expired 
 
-### Code Splitting
+    CRUD is the user 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Create -- new groceries 
+    Read -- read grocery items
+    Update -- Edit grocery description 
+    Delete -- Delete is spoiled 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+STRETCH
 
-### Making a Progressive Web App
+    CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    create countdown timer
 
-### Advanced Configuration
+    hover tag with catagory of food. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    if expired- changes to stinky face 
 
-### Deployment
+    create recipe or suggest recipe ?? 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    auto delete setting 
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    About to go bad/ Should you eat this? ALERT 
