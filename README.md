@@ -9,7 +9,7 @@ This app will help keep your fridge organized and updated by keeping track of in
 
 FIGMA LINK : "https://www.figma.com/file/9ScI1YBCbWa6w76NyHkcbz/Untitled?type=whiteboard&node-id=0-1&t=5e1E7s8pnLvVWf5g-0"
 
-GITHUB REPO: "https://github.com/knowicki024/phase-2-project"
+GITHUB REPO: "https://github.com/knowicki024/clearthefridge"
 
 TRELLO BOARD: "https://trello.com/b/vJ4rF7eM/phase-2-project"
 
