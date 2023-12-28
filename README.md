@@ -1,6 +1,7 @@
 # CLEAR THE FRIDGE!
 
-# CREATED BY: Steven M.
+# CREATED BY: 
+            Steven M.
             Zaquari A.
             Katie N.
 
@@ -15,6 +16,7 @@ TRELLO BOARD: "https://trello.com/b/vJ4rF7eM/phase-2-project"
 # COMPONENTS
 
     App component --GP
+    Header -- P 
     New Food Form component --P
     Page component --P 
     Search component --CH
