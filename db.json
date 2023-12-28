@@ -1,0 +1,154 @@
+{
+    "Groceries" : [
+        {
+            "id": 1,
+            "name": "Red Delicious Apple",
+            "category": "Produce",
+            "image" : "🍎",
+            "purchase_date": "12/12/2023",
+            "spoiled" : false, 
+            "description": "Crispy, juicy apple of the red variety."
+
+        },
+        {
+            "id": 2,
+            "name": "Avocado",
+            "category": "Produce",
+            "image" : "🥑",
+            "purchase_date": "11/29/2023",
+            "spoiled" : false, 
+            "description": "Large Haas avocado"
+
+        },
+        {
+            "id": 3,
+            "name": "Pizza",
+            "category": "Leftovers & Snacks",
+            "image" : "🍕",
+            "purchase_date": "11/15/2023",
+            "spoiled" : false, 
+            "description": "Extra cheesy pepperoni pizza from Pizza Hut"
+
+        },
+        {
+            "id": 4,
+            "name": "Gouda",
+            "category": "Dairy",
+            "image" : "🧀",
+            "purchase_date": "12/10/2023",
+            "spoiled" : false, 
+            "description": "Smoked gouda. Creamy and delicious"
+
+        },
+        {
+            "id": 5,
+            "name": "Everything Bagel",
+            "category": "Bread",
+            "image" : "🥯",
+            "purchase_date": "12/10/2023",
+            "spoiled" : false, 
+            "description": "Fresh everything bagels from the bakery"
+
+        },
+        {
+            "id": 6,
+            "name": "Eggs",
+            "category": "Meat & Poultry",
+            "image" : "🥚",
+            "purchase_date": "12/18/2023",
+            "spoiled" : false, 
+            "description": "Large Grade-A organic eggs"
+
+        },
+        {
+            "id": 7,
+            "name": "Ribeye",
+            "category": "Meat & Poultry",
+            "image" : "🥩",
+            "purchase_date": "12/29/2023",
+            "spoiled" : false, 
+            "description": "Quarter pound ribeye. Beautifully marbled"
+
+        },
+        {
+            "id": 8,
+            "name": "Deli Ham",
+            "category": "Meat & Poultry",
+            "image" : "🥪",
+            "purchase_date": "10/29/2023",
+            "spoiled" : false, 
+            "description": "Black Forest Deli Ham"
+
+        },
+        {
+            "id": 9,
+            "name": "Milk",
+            "category": "Dairy",
+            "image" : "🥛",
+            "purchase_date": "10/29/2023",
+            "spoiled" : false, 
+            "description": "2% milk"
+
+        },
+        {
+            "id": 10,
+            "name": "Cheesecake",
+            "category": "Leftovers & Snacks",
+            "image" : "🍰",
+            "purchase_date": "12/24/2023",
+            "spoiled" : false, 
+            "description": "NY style cheesecake"
+
+        },
+        {
+            "id": 11,
+            "name": "Sandwich Bread",
+            "category": "Bread",
+            "image" : "🍞",
+            "purchase_date": "12/29/2023",
+            "spoiled" : false, 
+            "description": "Soft honey wheat sandwich bread"
+
+        },
+        {
+            "id": 12,
+            "name": "Romaine",
+            "category": "Produce",
+            "image" : "🥬",
+            "purchase_date": "11/29/2023",
+            "spoiled" : false, 
+            "description": "Crisp and fresh"
+
+        },
+        {
+            "id": 13,
+            "name": "Butter",
+            "category": "Dairy",
+            "image" : "🧈",
+            "purchase_date": "11/29/2023",
+            "spoiled" : false, 
+            "description": "Rich and salted European butter"
+
+        },
+        {
+            "id": 14,
+            "name": "Breakfast Burrito",
+            "category": "Leftovers & Snacks",
+            "image" : "🌯",
+            "purchase_date": "11/29/2023",
+            "spoiled" : false, 
+            "description": "Egg, Potato, Beans, chorizo, and a TON of cheese"
+
+        },
+        {
+            "id": 15,
+            "name": "Bacon",
+            "category": "Meat & Poultry",
+            "image" : "🥓",
+            "purchase_date": "12/25/2023",
+            "spoiled" : false, 
+            "description": "Thick cut apple smoked bacon"
+
+        }
+    ]
+}
