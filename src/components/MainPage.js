@@ -28,7 +28,7 @@ function MainPage() {
      }, [])
 
      const searchGroceries = groceries.filter(grocery => {
-        return grocery.name.toLowerCase().includes(searchTerm.toLowerCase())
+        return grocery.name.toLowerCase().includes(searchTerm.toLowerCase()) || grocery.category.toLowerCase().includes(searchTerm.toLowerCase())
      })
 
      const handleSearch = (e) => {
