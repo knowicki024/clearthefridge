@@ -71,16 +71,27 @@ code {
 
 .food-display {
   display: flex;
-  flex-direction: column; 
   align-items: center; 
   justify-content: center; 
-  width: 450px; 
+  width: 500px; 
   min-height: 200px;
   margin: 0 auto;
+  margin-top: 50px;
   padding: 20px; 
   border: 1px solid #d4d4d5; 
   border-radius: 12px; 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  background: #fff;
+}
+
+.food-left-offset {
+  margin-right: 40px;
+}
+
+.food-info { 
+  margin-right: 20px;
+  padding: 10px;
+  transform: translateY(-15px);
 }
 
 .emoji-container {
@@ -92,9 +103,12 @@ code {
 
 .emoji {
   font-size: 12em; 
-  display: flex; 
-  align-self: center; 
-  margin-top: 20; 
+  margin-top: 20;
+  transform: translateX(10px); 
+}
+
+.emoji-form {
+  transform: translateY(10px); 
 }
 
 .food-description {
@@ -108,7 +122,7 @@ code {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  width: 450px; 
+  width: 600px; 
   margin: 0 auto;
   margin-top: 15px
 }
@@ -125,23 +139,107 @@ code {
 
 .emoji-grid {
   display: grid;
-  grid-template-columns: repeat(9, 1fr); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
   grid-auto-rows: 40px; /* Adjust the height of each row */
-  gap: 2px; /* Adjust the gap between items */
+  gap: 8px; /* Adjust the gap between items */
+  margin-right: 100px;
+  transform: translateY(-5px);
 }
 
 .emoji-grid-button {
   height: 40px;
   width: 40px;
-  font-size: 28px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
   padding: 5px;
+  font-size: 30px;
 }
 
+
+
+.form-display {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 600px; 
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px; 
+  border: 1px solid #d4d4d5; 
+  border-radius: 12px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  background: #fff; 
+}
+.form-container {
+  display: flex;
+  justify-content: right; 
+  width: 175px; 
+
+  margin: 0 auto;
+  padding: 10px; 
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  transform: translateY(-25px);
+}
+
+.form-left-offset {
+  margin-right: 70px;
+}
+
+.form-submit-button {
+  width: 600px;
+  height: 50px;
+  margin: 0 auto; /* Adjust the top margin if needed */
+  border: 1px solid #d4d4d5;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.input-group {
+  margin-bottom: 0px;
+}
+
+.input-bar {
+  width: 190px;
+}
+
+.text-area {
+  width: 190px;
+  max-width: 190px;
+  max-height: 75px;
+  background-color: lightgoldenrodyellow;
+}
+
+.text-area-edit {
+  width:220px;
+  height:220px;
+  max-width: 220px;
+  max-height: 220px;
+  resize: none;
+  padding: 2px;
+  transform: translateX(25px) translateY(10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: lightgoldenrodyellow;
+}
+
+.post-it-button { 
+  transform: translateX(37px) translateY(-28px);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
 
 body {
     background-image:

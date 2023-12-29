@@ -8,7 +8,7 @@ function Header() {
 //     const navigate = useNavigate()
 
 // function handleClick() {
-//     navigate("/NewFoodForm")
+//     navigate("/")
 // }
 
     return(
