@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Acme', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: rgb(107, 255, 255) */
@@ -20,6 +18,8 @@ code {
 .Header {
   background: pink; 
   border-bottom: solid 5px rgb(248, 155, 171);
+  font-size: 26px;
+  color: whitesmoke;
 }
 
 .header-content {
@@ -52,10 +52,13 @@ code {
 }
 
 .food-cards {
-  background: url("https://cdn.discordapp.com/attachments/1187512873015062528/1191803438649061406/fridge.png?ex=65a6c472&is=65944f72&hm=28b2df5203c5424792dfc8ee660e790d722bd2e1931657dd5a9297188ba5797c&");
-  width: 720px;
-  height: 710px;
-  padding-right: 250px;
+  display: grid;
+  grid-template-columns: repeat(4, 36px);
+  gap: 0;
+  background: url("https://media.discordapp.net/attachments/1187512873015062528/1192266055813447720/fridge-pink.png?ex=65a8734a&is=6595fe4a&hm=5312e43e9cefb65110dd6c393552ed80dd385e02ca4fb83f5d32d81d9003dc05&=&format=webp&quality=lossless&width=620&height=662");
+  width: 620px;
+  height: 562px;
+  /* padding-right: 250px; */
 }
 
 .get-groceries {
@@ -131,7 +134,7 @@ code {
 .emoji-grid-button {
   height: 40px;
   width: 40px;
-  font-size: 18px;
+  font-size: 28px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
