@@ -3,6 +3,7 @@ import NewFoodForm from './NewFoodForm';
 import Fridge from './Fridge';
 import Search from './Search';
 import FoodItemDetail from './FoodItemDetail';
+import { useNavigate } from 'react-router-dom'
 import { Route, Routes } from "react-router-dom"
 const API = " http://localhost:3000/groceries"
 
@@ -11,6 +12,7 @@ function MainPage() {
     const [groceries, setGroceries] = useState([])
     const [menu, setMenu] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
+    const navigate = useNavigate()
     
     
     useEffect(() => {
@@ -33,13 +35,26 @@ function MainPage() {
         setSearchTerm(e.target.value)
      }
 
+    function handleDelete(id) {
+        console.log(`DELETE: ${id}`);
+        fetch(`${API}/${id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((deletedItem) => {
+            setGroceries(groceries.filter((item) => item.id !== deletedItem.id));
+          })
+          .catch((error) => console.error('Error deleting item:', error));
+          
+      }
+
     return (
         <div>
             <Search onSearch={handleSearch} />
             <Routes>
                 <Route 
                     path="/fooditem/:id" 
-                    element={<FoodItemDetail />} />
+                    element={<FoodItemDetail handleDelete={handleDelete}/>} />
                 <Route
                     path="/newfoodform"
                     element={<NewFoodForm API={API} menu={menu} />} />
