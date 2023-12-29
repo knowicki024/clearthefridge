@@ -1,18 +1,9 @@
 import { React, useState } from 'react';
-import { Grid, Card, GridColumn } from "semantic-ui-react";
+import { Grid, GridColumn } from "semantic-ui-react";
 import Emoji from './Emoji';
 
 
-function NewFoodForm(Url){
-
-    const emojiDisplay = [
-        <Emoji key={1} image="🍿" />,
-        <Emoji key={2} image="🍕" />,
-        <Emoji key={3} image="🍔" />,
-        <Emoji key={4} image="🍦" />,
-        <Emoji key={5} image="🍎" />,
-        <Emoji key={6} image="🍟" />,
-      ];
+function NewFoodForm( { API, menu } ){
 
  const [formData, setFormData] = useState({
     "name": "",
@@ -20,8 +11,11 @@ function NewFoodForm(Url){
     "image" : "",
     "purchase_date": "",
     "spoiled" : false, 
-    "description": ""
+    "note": ""
   });
+
+  const [isSpoiled, setIsSpoiled] = useState(false)
+
 
   // Event handler for input changes
   const handleInputChange = (event) => {
@@ -32,12 +26,28 @@ function NewFoodForm(Url){
     });
   };
 
+  function toggleSpoiled(){
+    setIsSpoiled(!isSpoiled)
+    setFormData({
+        ...formData,
+        spoiled: !isSpoiled,
+      });
+  }
+
+  const updateImage = (newImage) => {
+    console.log(`New Image: ${newImage.textContent}`)
+    setFormData({
+      ...formData,
+      image: newImage.textContent
+    });
+  };
+
   // Event handler for form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Form submitted with data:', formData);
 
-    fetch(Url, {
+    fetch(API, {
         method: "POST",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify(formData),
@@ -51,57 +61,72 @@ function NewFoodForm(Url){
         });
     }
     
+    const emojiDisplay = menu.map((emoji) => (
+        <Emoji key={emoji.id} emoji={emoji} returnFunction={updateImage} />
+        ));
 
   return (
-    <div>
-    <Grid columns={3}>
-        <Grid.Row>
-            <Grid.Column width={7}>
-                <form onSubmit={handleSubmit}>
-                    <label>
-                        Food Name:
-                        <input
-                        type="text"
-                        name="foodName"
-                        value={formData.foodName}
-                        onChange={handleInputChange}
-                        />
-                    </label>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div style={{ width: '25%' }}>
+      <div className='emoji-container'>
+        {formData.image === "" ? (
+           <span className='emoji'>🛒</span>
+        ) : (
+          <span className='emoji'>{formData.image}</span>
+        )}
+      </div>
 
-                    <label>
-                        Food Description:
-                        <input
-                        type="text"
-                        name="foodDescription"
-                        value={formData.description}
-                        onChange={handleInputChange}
-                        />
-                    </label>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>
+            Food Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+          </label>
+        </div>
 
-                    <label>
-                        Time To Spoil:
-                        <input
-                        type="text"
-                        name="timeToSpoil"
-                        value={formData.timeToSpoil}
-                        onChange={handleInputChange}
-                        />
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
-            </Grid.Column>
-            <GridColumn width={1}></GridColumn>
-            <Grid.Column width={7}>
-            <div className='ui cards'>
-                {emojiDisplay}</div>
-          </Grid.Column>
-        </Grid.Row>
-    </Grid>
-</div>
+        <div>
+          <label>
+            Post-it Note:
+            <input
+              type="text"
+              name="note"
+              value={formData.note}
+              onChange={handleInputChange}
+            />
+          </label>
+        </div>
 
+        <div>
+          <label>
+            Time To Spoil:
+            <input
+              type="checkbox"
+              name="timeToSpoil"
+              checked={formData.timeToSpoil}
+              onChange={toggleSpoiled}
+            />
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div style={{ width: '40%', paddingLeft: '20px' }}>
+      <div className='emoji-container'>
+        <div className='emoji-grid'>
+          {emojiDisplay}
+        </div>
+      </div>
+    </div>
+  </div>
 
   );
 }
 
 export default NewFoodForm;
-

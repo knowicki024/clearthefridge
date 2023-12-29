@@ -1,153 +1,339 @@
-   "groceries" : [
+{
+    "groceries": [
         {
-            "id": 1,
-            "name": "Red Delicious Apple",
-            "category": "Produce",
-            "image" : "🍎",
-            "purchase_date": "12/12/2023",
-            "spoiled" : false, 
-            "description": "Crispy, juicy apple of the red variety."
-
+          "id": 1,
+          "name": "Red Delicious Apple",
+          "category": "Produce",
+          "image": "🍎",
+          "purchase_date": "12/12/2023",
+          "spoiled": false,
+          "note": "Remember to eat as a healthy snack during work breaks."
         },
         {
-            "id": 2,
-            "name": "Avocado",
-            "category": "Produce",
-            "image" : "🥑",
-            "purchase_date": "11/29/2023",
-            "spoiled" : false, 
-            "description": "Large Haas avocado"
-
+          "id": 2,
+          "name": "Avocado",
+          "category": "Produce",
+          "image": "🥑",
+          "purchase_date": "11/29/2023",
+          "spoiled": false,
+          "note": "Perfect for making guacamole or adding to salads."
         },
         {
-            "id": 3,
-            "name": "Pizza",
-            "category": "Leftovers & Snacks",
-            "image" : "🍕",
-            "purchase_date": "11/15/2023",
-            "spoiled" : false, 
-            "description": "Extra cheesy pepperoni pizza from Pizza Hut"
-
+          "id": 3,
+          "name": "Pizza",
+          "category": "Leftovers & Snacks",
+          "image": "🍕",
+          "purchase_date": "11/15/2023",
+          "spoiled": false,
+          "note": "Great for a quick snack or lazy dinner."
         },
         {
-            "id": 4,
-            "name": "Gouda",
-            "category": "Dairy",
-            "image" : "🧀",
-            "purchase_date": "12/10/2023",
-            "spoiled" : false, 
-            "description": "Smoked gouda. Creamy and delicious"
-
+          "id": 4,
+          "name": "Gouda",
+          "category": "Dairy",
+          "image": "🧀",
+          "purchase_date": "12/10/2023",
+          "spoiled": false,
+          "note": "Pair with some crackers for a delightful snack."
         },
         {
-            "id": 5,
-            "name": "Everything Bagel",
-            "category": "Bread",
-            "image" : "🥯",
-            "purchase_date": "12/10/2023",
-            "spoiled" : false, 
-            "description": "Fresh everything bagels from the bakery"
-
+          "id": 5,
+          "name": "Everything Bagel",
+          "category": "Bread",
+          "image": "🥯",
+          "purchase_date": "12/10/2023",
+          "spoiled": false,
+          "note": "Spread cream cheese and enjoy for breakfast."
         },
         {
-            "id": 6,
-            "name": "Eggs",
-            "category": "Meat & Poultry",
-            "image" : "🥚",
-            "purchase_date": "12/18/2023",
-            "spoiled" : false, 
-            "description": "Large Grade-A organic eggs"
-
+          "id": 6,
+          "name": "Eggs",
+          "category": "Meat & Poultry",
+          "image": "🥚",
+          "purchase_date": "12/18/2023",
+          "spoiled": false,
+          "note": "Great for making omelets or baking."
         },
         {
-            "id": 7,
-            "name": "Ribeye",
-            "category": "Meat & Poultry",
-            "image" : "🥩",
-            "purchase_date": "12/29/2023",
-            "spoiled" : false, 
-            "description": "Quarter pound ribeye. Beautifully marbled"
-
+          "id": 7,
+          "name": "Ribeye",
+          "category": "Meat & Poultry",
+          "image": "🥩",
+          "purchase_date": "12/29/2023",
+          "spoiled": false,
+          "note": "Grill to perfection for a delicious steak dinner."
         },
         {
-            "id": 8,
-            "name": "Deli Ham",
-            "category": "Meat & Poultry",
-            "image" : "🥪",
-            "purchase_date": "10/29/2023",
-            "spoiled" : false, 
-            "description": "Black Forest Deli Ham"
-
+          "id": 8,
+          "name": "Deli Ham",
+          "category": "Meat & Poultry",
+          "image": "🥪",
+          "purchase_date": "10/29/2023",
+          "spoiled": false,
+          "note": "Ideal for sandwiches or charcuterie boards."
         },
         {
-            "id": 9,
-            "name": "Milk",
-            "category": "Dairy",
-            "image" : "🥛",
-            "purchase_date": "10/29/2023",
-            "spoiled" : false, 
-            "description": "2% milk"
-
+          "id": 9,
+          "name": "Milk",
+          "category": "Dairy",
+          "image": "🥛",
+          "purchase_date": "10/29/2023",
+          "spoiled": false,
+          "note": "Use in coffee, cereal, or baking."
         },
         {
-            "id": 10,
-            "name": "Cheesecake",
-            "category": "Leftovers & Snacks",
-            "image" : "🍰",
-            "purchase_date": "12/24/2023",
-            "spoiled" : false, 
-            "description": "NY style cheesecake"
-
+          "id": 10,
+          "name": "Cheesecake",
+          "category": "Leftovers & Snacks",
+          "image": "🍰",
+          "purchase_date": "12/24/2023",
+          "spoiled": false,
+          "note": "Indulge in a slice for a sweet treat."
         },
         {
-            "id": 11,
-            "name": "Sandwich Bread",
-            "category": "Bread",
-            "image" : "🍞",
-            "purchase_date": "12/29/2023",
-            "spoiled" : false, 
-            "description": "Soft honey wheat sandwich bread"
-
+          "id": 11,
+          "name": "Sandwich Bread",
+          "category": "Bread",
+          "image": "🍞",
+          "purchase_date": "12/29/2023",
+          "spoiled": false,
+          "note": "Perfect for making sandwiches for lunch."
         },
         {
-            "id": 12,
-            "name": "Romaine",
-            "category": "Produce",
-            "image" : "🥬",
-            "purchase_date": "11/29/2023",
-            "spoiled" : false, 
-            "description": "Crisp and fresh"
-
+          "id": 12,
+          "name": "Romaine",
+          "category": "Produce",
+          "image": "🥬",
+          "purchase_date": "11/29/2023",
+          "spoiled": false,
+          "note": "Ideal for salads or as a crunchy lettuce wrap."
         },
         {
-            "id": 13,
-            "name": "Butter",
-            "category": "Dairy",
-            "image" : "🧈",
-            "purchase_date": "11/29/2023",
-            "spoiled" : false, 
-            "description": "Rich and salted European butter"
-
+          "id": 13,
+          "name": "Butter",
+          "category": "Dairy",
+          "image": "🧈",
+          "purchase_date": "11/29/2023",
+          "spoiled": false,
+          "note": "Use for baking or spread on warm toast."
         },
         {
-            "id": 14,
-            "name": "Breakfast Burrito",
-            "category": "Leftovers & Snacks",
-            "image" : "🌯",
-            "purchase_date": "11/29/2023",
-            "spoiled" : false, 
-            "description": "Egg, Potato, Beans, chorizo, and a TON of cheese"
-
+          "id": 14,
+          "name": "Breakfast Burrito",
+          "category": "Leftovers & Snacks",
+          "image": "🌯",
+          "purchase_date": "11/29/2023",
+          "spoiled": false,
+          "note": "Microwave for a quick and hearty breakfast."
         },
         {
-            "id": 15,
-            "name": "Bacon",
-            "category": "Meat & Poultry",
-            "image" : "🥓",
-            "purchase_date": "12/25/2023",
-            "spoiled" : false, 
-            "description": "Thick cut apple smoked bacon"
-
+          "id": 15,
+          "name": "Bacon",
+          "category": "Meat & Poultry",
+          "image": "🥓",
+          "purchase_date": "12/25/2023",
+          "spoiled": false,
+          "note": "Cook until crispy for a delicious breakfast side."
+        },
+        {
+          "id": 16,
+          "name": "Babe",
+          "category": "",
+          "image": "🍈",
+          "purchase_date": "",
+          "spoiled": true,
+          "note": "Unfortunately, this babe has spoiled. Dispose of it."
+        },
+        {
+          "id": 17,
+          "name": "Babe",
+          "category": "",
+          "image": "🍈",
+          "purchase_date": "",
+          "spoiled": false,
+          "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
         }
+    ],
+    "menu": [
+      {
+        "id": 1,
+        "image": "🍎"
+      },
+      {
+        "id": 2,
+        "image": "🍐"
+      },
+      {
+        "id": 3,
+        "image": "🍊"
+      },
+      {
+        "id": 4,
+        "image": "🍋"
+      },
+      {
+        "id": 5,
+        "image": "🍌"
+      },
+      {
+        "id": 6,
+        "image": "🍉"
+      },
+      {
+        "id": 7,
+        "image": "🍇"
+      },
+      {
+        "id": 8,
+        "image": "🍓"
+      },
+      {
+        "id": 9,
+        "image": "🫐"
+      },
+      {
+        "id": 10,
+        "image": "🍈"
+      },
+      {
+        "id": 11,
+        "image": "🍒"
+      },
+      {
+        "id": 12,
+        "image": "🍑"
+      },
+      {
+        "id": 13,
+        "image": "🥭"
+      },
+      {
+        "id": 14,
+        "image": "🍍"
+      },
+      {
+        "id": 15,
+        "image": "🥝"
+      },
+      {
+        "id": 16,
+        "image": "🍅"
+      },
+      {
+        "id": 17,
+        "image": "🍆"
+      },
+      {
+        "id": 18,
+        "image": "🥑"
+      },
+      {
+        "id": 19,
+        "image": "🥦"
+      },
+      {
+        "id": 20,
+        "image": "🥬"
+      },
+      {
+        "id": 21,
+        "image": "🥒"
+      },
+      {
+        "id": 22,
+        "image": "🌶"
+      },
+      {
+        "id": 23,
+        "image": "🫑"
+      },
+      {
+        "id": 24,
+        "image": "🌽"
+      },
+      {
+        "id": 25,
+        "image": "🥕"
+      },
+      {
+        "id": 26,
+        "image": "🧄"
+      },
+      {
+        "id": 27,
+        "image": "🧅"
+      },
+      {
+        "id": 28,
+        "image": "🥔"
+      },
+      {
+        "id": 29,
+        "image": "🍠"
+      },
+      {
+        "id": 30,
+        "image": "🫘"
+      },
+      {
+        "id": 31,
+        "image": "🥐"
+      },
+      {
+        "id": 32,
+        "image": "🥯"
+      },
+      {
+        "id": 33,
+        "image": "🍞"
+      },
+      {
+        "id": 34,
+        "image": "🥖"
+      },
+      {
+        "id": 35,
+        "image": "🥨"
+      },
+      {
+        "id": 36,
+        "image": "🧀"
+      },
+      {
+        "id": 37,
+        "image": "🥚"
+      },
+      {
+        "id": 38,
+        "image": "🍳"
+      },
+      {
+        "id": 39,
+        "image": "🧈"
+      },
+      {
+        "id": 40,
+        "image": "🥞"
+      },
+      {
+        "id": 41,
+        "image": "🧇"
+      },
+      {
+        "id": 42,
+        "image": "🥓"
+      },
+      {
+        "id": 43,
+        "image": "🥩"
+      },
+      {
+        "id": 44,
+        "image": "🍗"
+      },
+      {
+        "id": 45,
+        "image": "🥡"
+      }
     ]
-}
+  }

@@ -1,16 +1,19 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
 
-function handleClick(event){
 
-}
+function Emoji({ emoji, returnFunction }) {
 
-function Emoji({ image }) {
+  function handleClick(event) {
+    console.log(event.target);
+    returnFunction(event.target)
+  }
+
   return (
-    <button 
-    className="emoji-grid-button"
-    onClick={() => console.log('click')}>{image}</button>
+    <button id={emoji.id} className="emoji-grid-button" onClick={handleClick}>
+      {emoji.image}
+    </button>
   );
 }
+
 
 export default Emoji;
