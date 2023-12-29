@@ -57,16 +57,26 @@ code {
 }
 
 .fridge-layout {
-  transform: translateX(1px) translateY(-500px);
+  transform: translateX(-10px) translateY(-490px);
 }
 
-.get-groceries {
+.get-groceries  {
   transform: translateX(1px) translateY(-200px);
   font-size: 28px;
   border-radius: 12px;
   background: whitesmoke;
   border: outset 8px rgb(248, 155, 171);
   padding: 10px;
+}
+
+.search-bar {
+  transform: translateX(1px) translateY(50px);
+  font-size: 28px;
+  border-radius: 12px;
+  background: whitesmoke;
+  border: outset 8px rgb(248, 155, 171);
+  padding: 10px;
+
 }
 
 .food-display {
@@ -156,9 +166,12 @@ code {
   overflow: hidden;
   padding: 5px;
   font-size: 30px;
+  transition: background-color .4s ease;
 }
 
-
+.emoji-grid-button:hover {
+  background: pink;
+}
 
 .form-display {
   display: flex;
