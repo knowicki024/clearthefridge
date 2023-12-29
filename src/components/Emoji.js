@@ -1,53 +1,38 @@
 import React, { useState } from "react";
 
-const ToolTip = ({ text }) => <div className="tooltip">{text}</div>  
+const Tooltip = ({ text }) => {
+  return <div className="tooltip">{text}</div>;
+};
 
-function Emoji({ emoji, returnFunction, groceries }) {
+function Emoji({ emoji, returnFunction, groceryName }) {
+  const [isHovered, setIsHovered] = useState(false);
 
-  const [toolTip, setToolTip] = useState('');
-  
-  const [isHovered, setIsHovered] = useState(null);
-
-  function handleMouseEnter(groceries) {
-    setToolTip(groceries.tooltipText)
-    setIsHovered(groceries.id);
+  function handleMouseEnter() {
+    setIsHovered(true);
   }
 
   function handleMouseLeave() {
-    setToolTip('')
-    setIsHovered(null);
+    setIsHovered(false);
   }
 
   function handleClick(event) {
     returnFunction(event.target);
   }
 
-//   return (
-//     <button
-//       id={emoji.id}
-//       className={`emoji-grid-button ${isHovered ? "hovered" : ""}`}
-//       onClick={handleClick}
-//       onMouseEnter={handleMouseEnter}
-//       onMouseLeave={handleMouseLeave}
-//     >
-//       {emoji.image}
-//     </button>
-//   );
-
-return (
-  <div>
-      {groceries.map(groceries => (
-          <div 
-              key={groceries.id}
-              onMouseEnter={() => handleMouseEnter(groceries)}
-              onMouseLeave={handleMouseLeave}
-          >
-              {groceries.name}
-              {isHovered === groceries.id && <ToolTip text={toolTip} />}
-          </div>
-      ))}
-  </div>
-);
+  return (
+    <div className="emoji-container">
+      <button
+        id={emoji.id}
+        className={`emoji-grid-button ${isHovered ? "hovered" : ""}`}
+        onClick={handleClick}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {emoji.image}
+      </button>
+      {isHovered && <Tooltip text={groceryName} />}
+    </div>
+  );
 }
 
 export default Emoji;

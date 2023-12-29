@@ -264,3 +264,22 @@ body {
     background-size:30px 30px;    
     /* background-position:0 0, 10px 0, 10px -10px, 0px 10px; */
 }
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.emoji-grid-button:hover + .tooltip,
+.tooltip:hover {
+  display: block;
+}
