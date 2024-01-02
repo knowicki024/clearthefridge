@@ -7,9 +7,9 @@ function handleClick(event){
 
 function Emoji({ emoji }) {
   return (
-    <div class="ui centered card" onClick={handleClick}>
-        <div class="content">
-    <a class="header">{emoji}</a>
+    <div className="ui centered card" onClick={handleClick}>
+        <div className="content">
+    <div className="header">{emoji}</div>
   </div>
 </div>
   );
