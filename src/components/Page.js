@@ -7,9 +7,17 @@ const API = " http://localhost:3000/groceries"
 function Page() {
 
     const [groceries, setGroceries] = useState([])
+    const [menu, setMenu] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
-
+    
+    
     useEffect(() => {
+        fetch("http://localhost:3000/menu")
+        .then (response => response.json())
+        .then(setMenu)
+     }, [])
+
+     useEffect(() => {
         fetch(API)
         .then (response => response.json())
         .then(setGroceries)
@@ -26,7 +34,7 @@ function Page() {
     return (
         <div>
             <Search onSearch={handleSearch}/>
-            <NewFoodForm />
+            <NewFoodForm API={API} menu={menu}/>
             <Fridge groceries={searchGroceries}/>
 
         </div>
