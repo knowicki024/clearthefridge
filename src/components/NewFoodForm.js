@@ -1,18 +1,13 @@
 import { React, useState } from 'react';
-import { Grid, Card, GridColumn } from "semantic-ui-react";
+import { Grid, GridColumn } from "semantic-ui-react";
 import Emoji from './Emoji';
 
 
-function NewFoodForm(Url){
+function NewFoodForm( { API, menu } ){
 
-    const emojiDisplay = [
-        <Emoji key={1} image="🍿" />,
-        <Emoji key={2} image="🍕" />,
-        <Emoji key={3} image="🍔" />,
-        <Emoji key={4} image="🍦" />,
-        <Emoji key={5} image="🍎" />,
-        <Emoji key={6} image="🍟" />,
-      ];
+const emojiDisplay = menu.map((emoji) => (
+    <Emoji key={emoji.id} image={emoji.image} />
+    ));
 
  const [formData, setFormData] = useState({
     "name": "",
@@ -37,7 +32,7 @@ function NewFoodForm(Url){
     event.preventDefault();
     console.log('Form submitted with data:', formData);
 
-    fetch(Url, {
+    fetch(API, {
         method: "POST",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify(formData),
