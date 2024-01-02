@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import NewFoodForm from './NewFoodForm';
 import Fridge from './Fridge';
 import Search from './Search';
+import FoodItem from './FoodItem';
 const API = " http://localhost:3000/groceries"
 
 function Page() {
@@ -33,6 +34,7 @@ function Page() {
 
     return (
         <div>
+            <FoodItem />
             <Search onSearch={handleSearch}/>
             <NewFoodForm API={API} menu={menu}/>
             <Fridge groceries={searchGroceries}/>
