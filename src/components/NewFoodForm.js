@@ -87,7 +87,7 @@ const emojiDisplay = menu.map((emoji) => (
             </Grid.Column>
             <GridColumn width={1}></GridColumn>
             <Grid.Column width={7}>
-            <div classname='ui cards'>
+            <div className='ui cards'>
                 {emojiDisplay}</div>
           </Grid.Column>
         </Grid.Row>
