@@ -4,7 +4,9 @@ import Emoji from './Emoji';
 
 function Fridge({groceries}) {
 
-const foodCards = groceries.map(grocery => <Emoji key={grocery.id} grocery={grocery} />)
+const foodCards = groceries.map((grocery) => (
+<Emoji key={grocery.id} image={grocery.image} />
+))
 
     return (
         <div className='Fridge'>
