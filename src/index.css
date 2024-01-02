@@ -102,4 +102,22 @@ code {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between items */
+}
+
+.emoji-grid-button {
+  height: 40px; 
+  width: 40px; 
+  font-size: 18px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
+}
+
 
