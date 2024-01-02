@@ -1,4 +1,5 @@
-import React from 'react';
+import { React, useState } from 'react';
+import { Grid, Card, GridColumn } from "semantic-ui-react";
 
 
 function NewFoodForm(Url){
@@ -81,13 +82,6 @@ function NewFoodForm(Url){
             <GridColumn width={1}></GridColumn>
             <Grid.Column width={7}>
                 <>INSERT GRID OF EMOJIS HERE</>
-                {emojis.map((emoji, index) => (
-                    <Button
-                        key={index}
-                        onClick={() => handleEmojiClick(emoji)}
-                        content={emoji}
-                    />
-                    ))}
             </Grid.Column>
         </Grid.Row>
     </Grid>
