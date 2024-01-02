@@ -5,10 +5,6 @@ import Emoji from './Emoji';
 
 function NewFoodForm( { API, menu } ){
 
-const emojiDisplay = menu.map((emoji) => (
-    <Emoji key={emoji.id} image={emoji.image} />
-    ));
-
  const [formData, setFormData] = useState({
     "name": "",
     "category": "",
@@ -24,6 +20,14 @@ const emojiDisplay = menu.map((emoji) => (
     setFormData({
       ...formData,
       [name]: value,
+    });
+  };
+
+  const updateImage = (newImage) => {
+    console.log(`New Image: ${newImage}`)
+    setFormData({
+      ...formData,
+      image: newImage
     });
   };
 
@@ -46,6 +50,9 @@ const emojiDisplay = menu.map((emoji) => (
         });
     }
     
+    const emojiDisplay = menu.map((emoji) => (
+        <Emoji key={emoji.id} image={emoji.image} returnFunction={updateImage} />
+        ));
 
   return (
     <div>
