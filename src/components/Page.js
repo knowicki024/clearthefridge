@@ -40,9 +40,9 @@ function Page() {
             <Fridge groceries={searchGroceries}/>
 
         </div>
-    )
+    );
 }
 
 
-export default Page
+export default Page;
 
