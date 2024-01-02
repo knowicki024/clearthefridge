@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.food-display {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  width: 450px; 
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 20px; 
+  border: 1px solid #d4d4d5; 
+  border-radius: 12px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.emoji-container {
+  display: flex;
+  flex: 1; 
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+}
+
+.emoji {
+  font-size: 12em; 
+  display: flex; 
+  align-self: center; 
+  margin-top: 20; 
+}
+
+.food-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105%
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 450px; 
+  margin: 0 auto;
+  margin-top: 15px
+}
+
+.food-button {
+  height: 100px;
+  width: 100px;
+  font-size: 75px;
+  margin: 15px;
+  border: 1px solid #d4d4d5; 
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
