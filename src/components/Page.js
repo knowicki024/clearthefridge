@@ -10,7 +10,6 @@ const API = " http://localhost:3000/groceries"
 function Page() {
     return (
         <div>
-            <Header />
             <NewFoodForm />
             <Fridge />
 
