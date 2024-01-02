@@ -5,12 +5,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(107, 255, 255) */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+.Header {
+  background: pink; 
+}
+.header-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+}
+
+.Search {
+  display: flex;
+  justify-content: center;
+
+}
+
+.search-bar {
+  font-size: 18px;
+  margin: 1em;
+}
+
+.Cherry1 {
+  transform: scaleX(-1);
+}
+
+.Fridge {
+  display: flex;
+  justify-content: center;
+}
+
 .food-display {
   display: flex;
   flex-direction: column; 
@@ -65,3 +101,5 @@ code {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+

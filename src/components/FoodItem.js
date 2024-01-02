@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Grid, Card, GridColumn } from "semantic-ui-react";
 
 function FoodItem(){
@@ -35,3 +36,4 @@ function FoodItem(){
 }
 
 export default FoodItem;
+

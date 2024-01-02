@@ -1,4 +1,7 @@
 import React from 'react';
+
+
+
 import Header from './Header';
 import NewFoodForm from './NewFoodForm';
 import Fridge from './Fridge';
@@ -10,8 +13,11 @@ function Page() {
             <Header />
             <NewFoodForm />
             <Fridge />
+
         </div>
     )
 }
 
-export default Page;
+
+export default Page
+
