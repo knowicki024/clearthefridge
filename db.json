@@ -1,5 +1,5 @@
 {
-    "Groceries" : [
+    "groceries" : [
         {
             "id": 1,
             "name": "Red Delicious Apple",
