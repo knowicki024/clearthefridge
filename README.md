@@ -22,6 +22,7 @@ TRELLO BOARD: "https://trello.com/b/vJ4rF7eM/phase-2-project"
     Search component --CH
     Food List component --CH/P
     Food Item component --GC
+    Emoji -- GC
 
 # GROCERY INDEX
     name 
