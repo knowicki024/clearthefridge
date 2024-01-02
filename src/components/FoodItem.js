@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid, Card, GridColumn } from "semantic-ui-react";
+import { Grid, GridColumn } from "semantic-ui-react";
 
 function FoodItem(){
 
@@ -31,7 +31,12 @@ function FoodItem(){
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
+            <div className='button-container'>
+                <button className='food-button' onClick={() => console.log('Throw Away')}>🗑️</button>
+                <button className='food-button' onClick={() => console.log('Eat')}>🍽️</button>
+            </div>
         </div>
+        
     )
 }
 

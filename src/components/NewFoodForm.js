@@ -1,8 +1,18 @@
 import { React, useState } from 'react';
 import { Grid, Card, GridColumn } from "semantic-ui-react";
+import Emoji from './Emoji';
 
 
 function NewFoodForm(Url){
+
+    const emojiDisplay = [
+        <Emoji key={1} image="🍿" />,
+        <Emoji key={2} image="🍕" />,
+        <Emoji key={3} image="🍔" />,
+        <Emoji key={4} image="🍦" />,
+        <Emoji key={5} image="🍎" />,
+        <Emoji key={6} image="🍟" />,
+      ];
 
  const [formData, setFormData] = useState({
     "name": "",
@@ -40,6 +50,7 @@ function NewFoodForm(Url){
           console.error('Error');
         });
     }
+    
 
   return (
     <div>
@@ -81,8 +92,9 @@ function NewFoodForm(Url){
             </Grid.Column>
             <GridColumn width={1}></GridColumn>
             <Grid.Column width={7}>
-                <>INSERT GRID OF EMOJIS HERE</>
-            </Grid.Column>
+            <div classname='ui cards'>
+                {emojiDisplay}</div>
+          </Grid.Column>
         </Grid.Row>
     </Grid>
 </div>
