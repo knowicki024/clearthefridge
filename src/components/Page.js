@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Header from './Header';
 import NewFoodForm from './NewFoodForm';
 import Fridge from './Fridge';
 import Search from './Search';
@@ -26,7 +25,6 @@ function Page() {
 
     return (
         <div>
-            <Header/>
             <Search onSearch={handleSearch}/>
             <NewFoodForm />
             <Fridge groceries={searchGroceries}/>
