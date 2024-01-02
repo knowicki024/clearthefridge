@@ -23,9 +23,10 @@ function App() {
             <Header />
             <Search onSearch={handleSearch}/>
             <Page foodArr={searchedFoodsArr}/>
-        </div> 
+        </div>
     )
-}
+    };
 
 
-export default App;
+
+export default App
