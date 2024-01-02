@@ -1,3 +1,4 @@
+
 import React, {useState, useEffect} from 'react';
 import Page from './Page';
 import Header from './Header';
@@ -22,8 +23,6 @@ function App() {
             <Header />
             <Search onSearch={handleSearch}/>
             <Page foodArr={searchedFoodsArr}/>
-        </div>
-    )
-}
+
 
 export default App
