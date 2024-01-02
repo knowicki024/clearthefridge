@@ -5,10 +5,6 @@ import Emoji from './Emoji';
 
 function NewFoodForm( { API, menu } ){
 
-const emojiDisplay = menu.map((emoji) => (
-    <Emoji key={emoji.id} image={emoji.image} />
-    ));
-
  const [formData, setFormData] = useState({
     "name": "",
     "category": "",
@@ -18,12 +14,31 @@ const emojiDisplay = menu.map((emoji) => (
     "description": ""
   });
 
+  const [isSpoiled, setIsSpoiled] = useState(false)
+
+
   // Event handler for input changes
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
       [name]: value,
+    });
+  };
+
+  function toggleSpoiled(){
+    setIsSpoiled(!isSpoiled)
+    setFormData({
+        ...formData,
+        spoiled: !isSpoiled,
+      });
+  }
+
+  const updateImage = (newImage) => {
+    console.log(`New Image: ${newImage}`)
+    setFormData({
+      ...formData,
+      image: newImage
     });
   };
 
@@ -46,54 +61,70 @@ const emojiDisplay = menu.map((emoji) => (
         });
     }
     
+    const emojiDisplay = menu.map((emoji) => (
+        <Emoji key={emoji.id} image={emoji.image} returnFunction={updateImage} />
+        ));
 
   return (
-    <div>
-    <Grid columns={3}>
-        <Grid.Row>
-            <Grid.Column width={7}>
-                <form onSubmit={handleSubmit}>
-                    <label>
-                        Food Name:
-                        <input
-                        type="text"
-                        name="foodName"
-                        value={formData.foodName}
-                        onChange={handleInputChange}
-                        />
-                    </label>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div style={{ width: '25%' }}>
+      <div className='emoji-container'>
+        {formData.image === "" ? (
+          <div></div> 
+        ) : (
+          <span className='emoji'>{formData.image}</span>
+        )}
+      </div>
 
-                    <label>
-                        Food Description:
-                        <input
-                        type="text"
-                        name="foodDescription"
-                        value={formData.description}
-                        onChange={handleInputChange}
-                        />
-                    </label>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>
+            Food Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+          </label>
+        </div>
 
-                    <label>
-                        Time To Spoil:
-                        <input
-                        type="text"
-                        name="timeToSpoil"
-                        value={formData.timeToSpoil}
-                        onChange={handleInputChange}
-                        />
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
-            </Grid.Column>
-            <GridColumn width={1}></GridColumn>
-            <Grid.Column width={7}>
-            <div className='ui cards'>
-                {emojiDisplay}</div>
-          </Grid.Column>
-        </Grid.Row>
-    </Grid>
-</div>
+        <div>
+          <label>
+            Food Description:
+            <input
+              type="text"
+              name="description"
+              value={formData.description}
+              onChange={handleInputChange}
+            />
+          </label>
+        </div>
 
+        <div>
+          <label>
+            Time To Spoil:
+            <input
+              type="checkbox"
+              name="timeToSpoil"
+              checked={formData.timeToSpoil}
+              onChange={toggleSpoiled}
+            />
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div style={{ width: '40%', paddingLeft: '20px' }}>
+      <div className='emoji-container'>
+        <div className='emoji-grid'>
+          {emojiDisplay}
+        </div>
+      </div>
+    </div>
+  </div>
 
   );
 }
