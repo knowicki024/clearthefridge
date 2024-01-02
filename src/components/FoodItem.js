@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Grid, GridColumn } from "semantic-ui-react";
 
 function FoodItem(){
