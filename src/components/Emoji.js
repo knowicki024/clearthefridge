@@ -5,13 +5,11 @@ function handleClick(event){
 
 }
 
-function Emoji({ emoji }) {
+function Emoji({ image }) {
   return (
-    <div class="ui centered card" onClick={handleClick}>
-        <div class="content">
-    <a class="header">{emoji}</a>
-  </div>
-</div>
+    <button 
+    className="emoji-grid-button"
+    onClick={() => console.log('click')}>{image}</button>
   );
 }
 
