@@ -44,7 +44,7 @@ function MainPage() {
                     path="/newfoodform"
                     element={<NewFoodForm API={API} menu={menu} />} />
                 <Route
-                    path="/fridge"
+                    path="/"
                     element={<Fridge groceries={searchGroceries} />}/>
             </Routes>
 
