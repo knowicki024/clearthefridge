@@ -3,6 +3,7 @@ import NewFoodForm from './NewFoodForm';
 import Fridge from './Fridge';
 import Search from './Search';
 import FoodItem from './FoodItem';
+import Emoji from './Emoji';
 import { Route, Routes } from "react-router-dom"
 const API = " http://localhost:3000/groceries"
 
@@ -35,6 +36,17 @@ function Page() {
 
     return (
         <div>
+// <<<<<<< steven
+//             <Router>
+//                 <Routes>
+//                     <Route exact path="/" component={Emoji} />
+                  
+//                     <Route path="/food/:foodItemId" component={FoodItem} />
+//                 </Routes>
+//             </Router>
+//             <Search onSearch={handleSearch}/>
+//             <NewFoodForm API={API} menu={menu}/>
+//             <Fridge groceries={searchGroceries}/>
         <Routes>
             <Route 
                 path="/fooditem/:id" 

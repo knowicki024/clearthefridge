@@ -1,11 +1,17 @@
 import React from 'react';
 import Emoji from './Emoji';
+import { Navigate } from 'react-router-dom'
 
 
 function Fridge({groceries}) {
 
+const openFoodItem = (foodItemId) => {
+    console.log(foodItemId.id)
+    Navigate(`/food/${foodItemId}`);
+};
+
 const foodCards = groceries.map((grocery) => (
-<Emoji key={grocery.id} image={grocery.image} />
+<Emoji key={grocery.id} emoji={grocery} returnFunction={openFoodItem} />
 ))
 
     return (
