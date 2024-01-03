@@ -129,4 +129,3 @@ function NewFoodForm( { API, menu } ){
 }
 
 export default NewFoodForm;
-
