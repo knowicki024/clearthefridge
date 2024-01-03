@@ -36,18 +36,22 @@ function MainPage() {
      }
 
     function handleDelete(id) {
-        console.log(`DELETE: ${id}`);
+
+        //console.log(`DELETE: ${id}`);
         fetch(`${API}/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
           .then((deletedItem) => {
-            setGroceries(groceries.filter((item) => item.id !== deletedItem.id));
-          })
-          .catch((error) => console.error('Error deleting item:', error));
-          
-      }
 
+            console.log(deletedItem)
+            setGroceries(groceries.filter((item) => {
+                return (
+                    item.id !== id)}))
+            navigate('/')
+          })
+          .catch((error) => console.error('Error deleting item:', error));          
+      }
     return (
         <div>
             <Search onSearch={handleSearch} />
@@ -66,6 +70,5 @@ function MainPage() {
         </div>
     );
 }
-
 
 export default MainPage;

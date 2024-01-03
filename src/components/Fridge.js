@@ -8,7 +8,7 @@ function Fridge({groceries}) {
     const navigate = useNavigate()
 
 const openFoodItem = (foodItemId) => {
-    console.log(foodItemId.id)
+    //console.log(foodItemId.id)
     navigate(`/fooditem/${foodItemId.id}`);
 };
 

@@ -1,19 +1,19 @@
 
 import React from 'react';
-import Page from './components/MainPage';
+import MainPage from './components/MainPage';
 import Header from './components/Header';
 
 
 function App() {
 
-
     return (
-        <div className='App'>
-            <Header />
-            <Page />
-        </div>
+        
+    <div>
+        <Header />
+        <MainPage/>
+    </div>       
     )
-    };
+};
 
 
 

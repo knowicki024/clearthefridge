@@ -33,9 +33,10 @@ TRELLO BOARD: "https://trello.com/b/vJ4rF7eM/phase-2-project"
 # REACT ROUTERS 
 
     Home Page  --- (rootRoute)
-    Food Add Form --- /food/:id/add 
+    Food Add Form --- /food/new  
     food list --- /food
     food detail --- /food/:id
+    food edit -- /food/:id/edit
 
 # DB.JSON EXAMPLE 
 ```{

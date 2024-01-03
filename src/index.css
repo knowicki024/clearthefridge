@@ -63,7 +63,6 @@ code {
 
 .emoji-container {
   display: flex;
-  flex: 1; 
   align-items: center;
   justify-content: center;
   height: 100%; 
@@ -104,13 +103,14 @@ code {
 
 .emoji-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
-  gap: 10px; /* Adjust the gap between items */
+  grid-template-columns: repeat(9, 1fr); /* Adjust the number of columns as needed */
+  grid-auto-rows: 40px; /* Adjust the height of each row */
+  gap: 2px; /* Adjust the gap between items */
 }
 
 .emoji-grid-button {
-  height: 40px; 
-  width: 40px; 
+  height: 40px;
+  width: 40px;
   font-size: 18px;
   background-color: transparent;
   background-repeat: no-repeat;
