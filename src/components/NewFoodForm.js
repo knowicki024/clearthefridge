@@ -62,7 +62,7 @@ function NewFoodForm( { API, menu } ){
     }
     
     const emojiDisplay = menu.map((emoji) => (
-        <Emoji key={emoji.id} image={emoji.image} returnFunction={updateImage} />
+        <Emoji key={emoji.id} emoji={emoji} returnFunction={updateImage} />
         ));
 
   return (

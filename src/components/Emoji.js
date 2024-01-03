@@ -1,15 +1,16 @@
 import React from "react";
 
 
-function Emoji({ image, returnFunction }) {
+function Emoji({ emoji, returnFunction }) {
 
   function handleClick(event) {
-    console.log(event.target.textContent);
+    console.log(event.target);
+    returnFunction(event.target)
   }
 
   return (
-    <button className="emoji-grid-button" onClick={handleClick}>
-      {image}
+    <button id={emoji.id} className="emoji-grid-button" onClick={handleClick}>
+      {emoji.image}
     </button>
   );
 }
