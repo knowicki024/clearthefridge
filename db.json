@@ -1,158 +1,158 @@
 {
   "groceries": [
-    {
-      "id": 1,
-      "name": "Red Delicious Apple",
-      "category": "Produce",
-      "image": "🍎",
-      "purchase_date": "12/12/2023",
-      "spoiled": false,
-      "description": "Crispy, juicy apple of the red variety."
-    },
-    {
-      "id": 2,
-      "name": "Avocado",
-      "category": "Produce",
-      "image": "🥑",
-      "purchase_date": "11/29/2023",
-      "spoiled": false,
-      "description": "Large Haas avocado"
-    },
-    {
-      "id": 3,
-      "name": "Pizza",
-      "category": "Leftovers & Snacks",
-      "image": "🍕",
-      "purchase_date": "11/15/2023",
-      "spoiled": false,
-      "description": "Extra cheesy pepperoni pizza from Pizza Hut"
-    },
-    {
-      "id": 4,
-      "name": "Gouda",
-      "category": "Dairy",
-      "image": "🧀",
-      "purchase_date": "12/10/2023",
-      "spoiled": false,
-      "description": "Smoked gouda. Creamy and delicious"
-    },
-    {
-      "id": 5,
-      "name": "Everything Bagel",
-      "category": "Bread",
-      "image": "🥯",
-      "purchase_date": "12/10/2023",
-      "spoiled": false,
-      "description": "Fresh everything bagels from the bakery"
-    },
-    {
-      "id": 6,
-      "name": "Eggs",
-      "category": "Meat & Poultry",
-      "image": "🥚",
-      "purchase_date": "12/18/2023",
-      "spoiled": false,
-      "description": "Large Grade-A organic eggs"
-    },
-    {
-      "id": 7,
-      "name": "Ribeye",
-      "category": "Meat & Poultry",
-      "image": "🥩",
-      "purchase_date": "12/29/2023",
-      "spoiled": false,
-      "description": "Quarter pound ribeye. Beautifully marbled"
-    },
-    {
-      "id": 8,
-      "name": "Deli Ham",
-      "category": "Meat & Poultry",
-      "image": "🥪",
-      "purchase_date": "10/29/2023",
-      "spoiled": false,
-      "description": "Black Forest Deli Ham"
-    },
-    {
-      "id": 9,
-      "name": "Milk",
-      "category": "Dairy",
-      "image": "🥛",
-      "purchase_date": "10/29/2023",
-      "spoiled": false,
-      "description": "2% milk"
-    },
-    {
-      "id": 10,
-      "name": "Cheesecake",
-      "category": "Leftovers & Snacks",
-      "image": "🍰",
-      "purchase_date": "12/24/2023",
-      "spoiled": false,
-      "description": "NY style cheesecake"
-    },
-    {
-      "id": 11,
-      "name": "Sandwich Bread",
-      "category": "Bread",
-      "image": "🍞",
-      "purchase_date": "12/29/2023",
-      "spoiled": false,
-      "description": "Soft honey wheat sandwich bread"
-    },
-    {
-      "id": 12,
-      "name": "Romaine",
-      "category": "Produce",
-      "image": "🥬",
-      "purchase_date": "11/29/2023",
-      "spoiled": false,
-      "description": "Crisp and fresh"
-    },
-    {
-      "id": 13,
-      "name": "Butter",
-      "category": "Dairy",
-      "image": "🧈",
-      "purchase_date": "11/29/2023",
-      "spoiled": false,
-      "description": "Rich and salted European butter"
-    },
-    {
-      "id": 14,
-      "name": "Breakfast Burrito",
-      "category": "Leftovers & Snacks",
-      "image": "🌯",
-      "purchase_date": "11/29/2023",
-      "spoiled": false,
-      "description": "Egg, Potato, Beans, chorizo, and a TON of cheese"
-    },
-    {
-      "id": 15,
-      "name": "Bacon",
-      "category": "Meat & Poultry",
-      "image": "🥓",
-      "purchase_date": "12/25/2023",
-      "spoiled": false,
-      "description": "Thick cut apple smoked bacon"
-    },
-    {
-      "name": "Babe",
-      "category": "",
-      "image": "🍈",
-      "purchase_date": "",
-      "spoiled": true,
-      "description": "sweet",
-      "id": 16
-    },
-    {
-      "name": "Babe",
-      "category": "",
-      "image": "🍈",
-      "purchase_date": "",
-      "spoiled": false,
-      "description": "sweet",
-      "id": 17
-    }
+      {
+        "id": 1,
+        "name": "Red Delicious Apple",
+        "category": "Produce",
+        "image": "🍎",
+        "purchase_date": "12/12/2023",
+        "spoiled": false,
+        "note": "Remember to eat as a healthy snack during work breaks."
+      },
+      {
+        "id": 2,
+        "name": "Avocado",
+        "category": "Produce",
+        "image": "🥑",
+        "purchase_date": "11/29/2023",
+        "spoiled": false,
+        "note": "Perfect for making guacamole or adding to salads."
+      },
+      {
+        "id": 3,
+        "name": "Pizza",
+        "category": "Leftovers & Snacks",
+        "image": "🍕",
+        "purchase_date": "11/15/2023",
+        "spoiled": false,
+        "note": "Great for a quick snack or lazy dinner."
+      },
+      {
+        "id": 4,
+        "name": "Gouda",
+        "category": "Dairy",
+        "image": "🧀",
+        "purchase_date": "12/10/2023",
+        "spoiled": false,
+        "note": "Pair with some crackers for a delightful snack."
+      },
+      {
+        "id": 5,
+        "name": "Everything Bagel",
+        "category": "Bread",
+        "image": "🥯",
+        "purchase_date": "12/10/2023",
+        "spoiled": false,
+        "note": "Spread cream cheese and enjoy for breakfast."
+      },
+      {
+        "id": 6,
+        "name": "Eggs",
+        "category": "Meat & Poultry",
+        "image": "🥚",
+        "purchase_date": "12/18/2023",
+        "spoiled": false,
+        "note": "Great for making omelets or baking."
+      },
+      {
+        "id": 7,
+        "name": "Ribeye",
+        "category": "Meat & Poultry",
+        "image": "🥩",
+        "purchase_date": "12/29/2023",
+        "spoiled": false,
+        "note": "Grill to perfection for a delicious steak dinner."
+      },
+      {
+        "id": 8,
+        "name": "Deli Ham",
+        "category": "Meat & Poultry",
+        "image": "🥪",
+        "purchase_date": "10/29/2023",
+        "spoiled": false,
+        "note": "Ideal for sandwiches or charcuterie boards."
+      },
+      {
+        "id": 9,
+        "name": "Milk",
+        "category": "Dairy",
+        "image": "🥛",
+        "purchase_date": "10/29/2023",
+        "spoiled": false,
+        "note": "Use in coffee, cereal, or baking."
+      },
+      {
+        "id": 10,
+        "name": "Cheesecake",
+        "category": "Leftovers & Snacks",
+        "image": "🍰",
+        "purchase_date": "12/24/2023",
+        "spoiled": false,
+        "note": "Indulge in a slice for a sweet treat."
+      },
+      {
+        "id": 11,
+        "name": "Sandwich Bread",
+        "category": "Bread",
+        "image": "🍞",
+        "purchase_date": "12/29/2023",
+        "spoiled": false,
+        "note": "Perfect for making sandwiches for lunch."
+      },
+      {
+        "id": 12,
+        "name": "Romaine",
+        "category": "Produce",
+        "image": "🥬",
+        "purchase_date": "11/29/2023",
+        "spoiled": false,
+        "note": "Ideal for salads or as a crunchy lettuce wrap."
+      },
+      {
+        "id": 13,
+        "name": "Butter",
+        "category": "Dairy",
+        "image": "🧈",
+        "purchase_date": "11/29/2023",
+        "spoiled": false,
+        "note": "Use for baking or spread on warm toast."
+      },
+      {
+        "id": 14,
+        "name": "Breakfast Burrito",
+        "category": "Leftovers & Snacks",
+        "image": "🌯",
+        "purchase_date": "11/29/2023",
+        "spoiled": false,
+        "note": "Microwave for a quick and hearty breakfast."
+      },
+      {
+        "id": 15,
+        "name": "Bacon",
+        "category": "Meat & Poultry",
+        "image": "🥓",
+        "purchase_date": "12/25/2023",
+        "spoiled": false,
+        "note": "Cook until crispy for a delicious breakfast side."
+      },
+      {
+        "id": 16,
+        "name": "Babe",
+        "category": "",
+        "image": "🍈",
+        "purchase_date": "",
+        "spoiled": true,
+        "note": "Unfortunately, this babe has spoiled. Dispose of it."
+      },
+      {
+        "id": 17,
+        "name": "Babe",
+        "category": "",
+        "image": "🍈",
+        "purchase_date": "",
+        "spoiled": false,
+        "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
+      }
   ],
   "menu": [
     {

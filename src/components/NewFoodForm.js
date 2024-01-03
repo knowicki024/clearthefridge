@@ -11,7 +11,7 @@ function NewFoodForm( { API, menu } ){
     "image" : "",
     "purchase_date": "",
     "spoiled" : false, 
-    "description": ""
+    "note": ""
   });
 
   const [isSpoiled, setIsSpoiled] = useState(false)
@@ -70,7 +70,7 @@ function NewFoodForm( { API, menu } ){
     <div style={{ width: '25%' }}>
       <div className='emoji-container'>
         {formData.image === "" ? (
-          <div></div> 
+           <span className='emoji'>🛒</span>
         ) : (
           <span className='emoji'>{formData.image}</span>
         )}
@@ -91,11 +91,11 @@ function NewFoodForm( { API, menu } ){
 
         <div>
           <label>
-            Food Description:
+            Post-it Note:
             <input
               type="text"
-              name="description"
-              value={formData.description}
+              name="note"
+              value={formData.note}
               onChange={handleInputChange}
             />
           </label>
