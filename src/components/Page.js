@@ -36,30 +36,21 @@ function Page() {
 
     return (
         <div>
-// <<<<<<< steven
-//             <Router>
-//                 <Routes>
-//                     <Route exact path="/" component={Emoji} />
-                  
-//                     <Route path="/food/:foodItemId" component={FoodItem} />
-//                 </Routes>
-//             </Router>
-//             <Search onSearch={handleSearch}/>
-//             <NewFoodForm API={API} menu={menu}/>
-//             <Fridge groceries={searchGroceries}/>
+                    {/* <Route exact path="/" component={Emoji} /> */}
+  
         <Routes>
             <Route 
                 path="/fooditem/:id" 
                 element={<FoodItem />} />
-            <Route 
-                path="/search" 
-                element={<Search onSearch={handleSearch} />} />
             <Route
                 path="/newfoodform"
                 element={<NewFoodForm API={API} menu={menu} />} />
             <Route
-                path="/groceries"
+                path="/"
                 element={<Fridge groceries={searchGroceries} />}/>
+            {/* <Route
+                path="/"
+                element= */}
         </Routes>
 
         </div>
