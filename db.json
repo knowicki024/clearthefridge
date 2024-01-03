@@ -1,13 +1,31 @@
 {
   "groceries": [
     {
-      "id": 3,
-      "name": "Red Delicious Apple",
+      "id": 2,
+      "name": "Avocado",
       "category": "Produce",
-      "image": "🍎",
-      "purchase_date": "12/12/2023",
+      "image": "🥑",
+      "purchase_date": "11/29/2023",
       "spoiled": false,
-      "note": "Remember to eat as a healthy snack during work breaks."
+      "note": "Large Haas avocado"
+    },
+    {
+      "id": 3,
+      "name": "Pizza",
+      "category": "Leftovers & Snacks",
+      "image": "🍕",
+      "purchase_date": "11/15/2023",
+      "spoiled": false,
+      "note": "Extra cheesy pepperoni pizza from Pizza Hut"
+    },
+    {
+      "id": 8,
+      "name": "Deli Ham",
+      "category": "Meat & Poultry",
+      "image": "🥪",
+      "purchase_date": "10/29/2023",
+      "spoiled": false,
+      "note": "Black Forest Deli Ham"
     },
     {
       "id": 9,
@@ -16,7 +34,16 @@
       "image": "🥛",
       "purchase_date": "10/29/2023",
       "spoiled": false,
-      "note": "Use in coffee, cereal, or baking."
+      "note": "2% milk"
+    },
+    {
+      "id": 12,
+      "name": "Romaine",
+      "category": "Produce",
+      "image": "🥬",
+      "purchase_date": "11/29/2023",
+      "spoiled": false,
+      "note": "Crisp and fresh"
     },
     {
       "id": 13,
@@ -25,7 +52,16 @@
       "image": "🧈",
       "purchase_date": "11/29/2023",
       "spoiled": false,
-      "note": "Use for baking or spread on warm toast."
+      "note": "Rich and salted European butter"
+    },
+    {
+      "id": 14,
+      "name": "Breakfast Burrito",
+      "category": "Leftovers & Snacks",
+      "image": "🌯",
+      "purchase_date": "11/29/2023",
+      "spoiled": false,
+      "note": "Egg, Potato, Beans, chorizo, and a TON of cheese"
     },
     {
       "id": 15,
@@ -34,16 +70,16 @@
       "image": "🥓",
       "purchase_date": "12/25/2023",
       "spoiled": false,
-      "note": "Cook until crispy for a delicious breakfast side."
+      "note": "Thick cut apple smoked bacon"
     },
     {
-      "id": 16,
       "name": "Babe",
       "category": "",
       "image": "🍈",
       "purchase_date": "",
       "spoiled": true,
-      "note": "Unfortunately, this babe has spoiled. Dispose of it."
+      "note": "sweet",
+      "id": 16
     }
   ],
   "menu": [
