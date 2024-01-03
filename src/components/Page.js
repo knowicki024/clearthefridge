@@ -3,6 +3,7 @@ import NewFoodForm from './NewFoodForm';
 import Fridge from './Fridge';
 import Search from './Search';
 import FoodItem from './FoodItem';
+import { Route, Routes } from "react-router-dom"
 const API = " http://localhost:3000/groceries"
 
 function Page() {
@@ -34,10 +35,20 @@ function Page() {
 
     return (
         <div>
-            <FoodItem />
-            <Search onSearch={handleSearch}/>
-            <NewFoodForm API={API} menu={menu}/>
-            <Fridge groceries={searchGroceries}/>
+        <Routes>
+            <Route 
+                path="/fooditem/:id" 
+                element={<FoodItem />} />
+            <Route 
+                path="/search" 
+                element={<Search onSearch={handleSearch} />} />
+            <Route
+                path="/newfoodform"
+                element={<NewFoodForm API={API} menu={menu} />} />
+            <Route
+                path="/groceries"
+                element={<Fridge groceries={searchGroceries} />}/>
+        </Routes>
 
         </div>
     );

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Grid } from "semantic-ui-react";
+import { useParams } from "react-router-dom"
 
 function FoodItem(){
+
+    let { id } = useParams();
 
     let isBad = true; 
 
