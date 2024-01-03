@@ -4,10 +4,10 @@ import { useParams } from "react-router-dom"
 import { useNavigate } from 'react-router-dom'
 const API = " http://localhost:3000/groceries"
 
-function FoodItemDetail( ){
+function FoodItemDetail( {handleDelete} ){
     let { id } = useParams();
     const navigate = useNavigate()
-    const [itemData, setItemData] = useState(null);
+    const [itemData, setItemData] = useState({});
 
     useEffect(() => {
       // Fetch data for the specified item ID
@@ -15,7 +15,7 @@ function FoodItemDetail( ){
         .then((response) => response.json())
         .then(setItemData)
         .catch((error) => console.error('Error fetching data:', error));
-    }, [id]);
+    }, [id,API]);
 
 
 
@@ -33,28 +33,36 @@ function FoodItemDetail( ){
             "note": event.target.value,
         });
         };
+
+        useEffect(() => {
+            if (itemData){
+                setFormData({"note" : itemData.note});
+            }
+        },[itemData])
+
     //// TOGGLE IS-EDIT ON CLICK
-    function handleClick(){
+    function toggleEdit(){
         setIsEdit(!isEdit)
     }
 
-    ////DELETE
-    function handleDeleteClick(){
-        console.log('DELETE')
-        // fetch(`${API}/${item.id}`,{
-        // "method" : "DELETE"})
-        // .then(navigate('/'))
+    //// DELETE CLICK
+        function handleDeleteClick(event){
+        handleDelete(itemData.id)
     }
-
+    
     //// EDIT
     function handleSubmit(event){
-        event.preventDefault()
-        console.log('SUBMIT')
-        // fetch(`${API}/${item.id}`,{
-        // "method" : "PUT",
-        // "headers" : {"Content-Type" : "application/json"},
-        // "body" : JSON.stringify(formData)
-        // })
+        event.preventDefault();
+        console.log(`SUBMIT: ${JSON.stringify(formData)}`);
+        fetch(`${API}/${itemData.id}`, {
+            "method": "PATCH",
+            "headers": {"Content-Type": "application/json"},
+            "body": JSON.stringify(formData)
+        })
+        .then(res => res.json())
+        .then(setItemData)
+        .then(toggleEdit)
+        .catch(error => console.error('Error updating data:', error));
     }
     
     return (
@@ -74,24 +82,24 @@ function FoodItemDetail( ){
                             <input
                             type="text"
                             name="note"
-                            value={"CHANGE THIS TO ITEM.NOTE WHEN DATA IS LINKED"}
+                            value={formData.note}
                             onChange={handleInputChange}/>
                             <button 
                             type="submit"
-                            onSubmit={handleSubmit}
+                            onClick={handleSubmit}
                             >Post-it</button>
                         </form>
                         :
                         <Grid.Row>
                             {itemData.spoiled ? <h2>{itemData.name} 🤢</h2> : <h2>{itemData.name}</h2>}
-                            <p>Post-it Note</p>
+                            <p>Post-it: {itemData.note}</p>
                             <Grid.Row>
                                 <p>Purchase Time: {itemData.purchase_date}</p>
                             </Grid.Row>
                             <Grid.Row>
                                 <p></p>
                             </Grid.Row>
-                            <button onClick={handleClick}>Edit Note</button>
+                            <button onClick={toggleEdit}>Edit Note</button>
                         </Grid.Row>}
                     </Grid.Column>
                 </Grid.Row>
