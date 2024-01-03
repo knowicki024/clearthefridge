@@ -35,10 +35,10 @@ function NewFoodForm( { API, menu } ){
   }
 
   const updateImage = (newImage) => {
-    console.log(`New Image: ${newImage}`)
+    console.log(`New Image: ${newImage.textContent}`)
     setFormData({
       ...formData,
-      image: newImage
+      image: newImage.textContent
     });
   };
 
