@@ -93,7 +93,7 @@ function FoodItemDetail( {handleDelete} ){
         <h2>{itemData.name}</h2>
       )}
       <p>Post-it: {itemData.note}</p>
-      <p>Purchase Time: {itemData.purchase_date}</p>
+      <p>Purchase Date: {itemData.purchase_date}</p>
       <button onClick={toggleEdit}>Edit Post-it</button>
     </div>
   )}

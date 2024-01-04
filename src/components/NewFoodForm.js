@@ -11,7 +11,7 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
       "name": "",
       "category": "",
       "image" : "",
-      "purchase_date": "",
+      "purchase_date": new Date().toISOString().split('T')[0],
       "spoiled" : false, 
       "note": ""
     });
