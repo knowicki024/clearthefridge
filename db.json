@@ -97,16 +97,7 @@
       "image": "🍞",
       "purchase_date": "12/29/2023",
       "spoiled": false,
-      "note": "Perfect for making sandwiches for lunch. And so much more!"
-    },
-    {
-      "id": 12,
-      "name": "Romaine",
-      "category": "Produce",
-      "image": "🥬",
-      "purchase_date": "11/29/2023",
-      "spoiled": false,
-      "note": "Ideal for salads or as a crunchy lettuce wrap."
+      "note": "Perfect for making sandwiches for lunch."
     },
     {
       "id": 13,
@@ -136,6 +127,15 @@
       "note": "Cook until crispy for a delicious breakfast side."
     },
     {
+      "name": "yellow onion",
+      "category": "",
+      "image": "🧅",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "diced and ready to cook",
+      "id": 19
+    },
+    {
       "name": "baguette",
       "category": "",
       "image": "🥖",
@@ -152,6 +152,8 @@
       "spoiled": false,
       "note": "so spicy",
       "id": 22
+      "spoiled": true,
+      "note": "Unfortunately, this babe has spoiled. Dispose of it."
     },
     {
       "id": 17,
@@ -170,33 +172,6 @@
       "spoiled": false,
       "note": "",
       "id": 19
-    },
-    {
-      "name": "Croissant",
-      "category": "Baked Good",
-      "image": "🥐",
-      "purchase_date": "2024-01-17",
-      "spoiled": false,
-      "note": "yummy",
-      "id": 23
-    },
-    {
-      "name": "Garlic",
-      "category": "Produce",
-      "image": "🧄",
-      "purchase_date": "2024-01-16",
-      "spoiled": false,
-      "note": "anit-vampire",
-      "id": 24
-    },
-    {
-      "name": "Eggplant",
-      "category": "Produce",
-      "image": "🍆",
-      "purchase_date": "2024-01-15",
-      "spoiled": false,
-      "note": " ",
-      "id": 25
     }
   ],
   "menu": [
