@@ -71,7 +71,7 @@ code {
   display: flex;
   align-items: center; 
   justify-content: center; 
-  width: 450px; 
+  width: 500px; 
   min-height: 200px;
   margin: 0 auto;
   margin-top: 50px;
@@ -80,6 +80,16 @@ code {
   border-radius: 12px; 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
   background: #fff;
+}
+
+.food-left-offset {
+  margin-right: 40px;
+}
+
+.food-info { 
+  margin-right: 20px;
+  padding: 10px;
+  transform: translateY(-15px);
 }
 
 .emoji-container {
@@ -91,9 +101,8 @@ code {
 
 .emoji {
   font-size: 12em; 
-  display: flex; 
-  align-self: center; 
-  margin-top: 20; 
+  margin-top: 20;
+  transform: translateX(10px); 
 }
 
 .food-description {
@@ -193,6 +202,22 @@ code {
   max-width: 190px;
   max-height: 75px;
   background-color: lightgoldenrodyellow;
+}
+
+.text-area-edit {
+  width:220px;
+  height:220px;
+  max-width: 220px;
+  max-height: 220px;
+  resize: none;
+  padding: 2px;
+  transform: translateX(25px) translateY(10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: lightgoldenrodyellow;
+}
+
+.post-it-button { 
+  transform: translateX(37px) translateY(-28px);
 }
 
 label {
