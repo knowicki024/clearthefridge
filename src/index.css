@@ -111,13 +111,13 @@ code {
 .emoji-grid-button {
   height: 40px;
   width: 40px;
-  font-size: 18px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
   padding: 5px;
+  font-size: 28px;
 }
 
 
