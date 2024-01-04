@@ -136,13 +136,14 @@
       "note": "Cook until crispy for a delicious breakfast side."
     },
     {
-      "id": 16,
-      "name": "Babe",
+
+      "name": "potato",
       "category": "",
-      "image": "🍈",
+      "image": "🥔",
       "purchase_date": "",
-      "spoiled": true,
-      "note": "Unfortunately, this babe has spoiled. Dispose of it."
+      "spoiled": false,
+      "note": "russet",
+      "id": 16
     },
     {
       "id": 17,
@@ -161,6 +162,7 @@
       "spoiled": true,
       "note": "It's green!",
       "id": 18
+
     }
   ],
   "menu": [
