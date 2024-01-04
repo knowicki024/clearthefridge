@@ -136,15 +136,6 @@
       "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
     },
     {
-      "name": "Kidney Beans",
-      "category": "",
-      "image": "🫘",
-      "purchase_date": "",
-      "spoiled": true,
-      "note": "pre-cooked in chili sauce",
-      "id": 18
-    },
-    {
       "name": "yellow onion",
       "category": "",
       "image": "🧅",
@@ -167,7 +158,7 @@
       "category": "",
       "image": "🌶",
       "purchase_date": "",
-      "spoiled": true,
+      "spoiled": false,
       "note": "so spicy",
       "id": 22
     }

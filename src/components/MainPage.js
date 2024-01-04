@@ -35,6 +35,12 @@ function MainPage() {
         setSearchTerm(e.target.value)
      }
 
+     const refreshGroceries = () => {
+        fetch(API)
+        .then (response => response.json())
+        .then(setGroceries)
+     }
+
     function handleDelete(id) {
 
         //console.log(`DELETE: ${id}`);
@@ -52,23 +58,31 @@ function MainPage() {
           })
           .catch((error) => console.error('Error deleting item:', error));          
       }
+
       return (
         <div>
             <Routes>
                 <Route 
                     path="/fooditem/:id" 
-                    element={<FoodItemDetail handleDelete={handleDelete}/>} 
+                    element={<FoodItemDetail 
+                                handleDelete={handleDelete}/>} 
                 />
                 <Route
                     path="/newfoodform"
-                    element={<NewFoodForm API={API} menu={menu} navigate={navigate}/>} 
+                    element={<NewFoodForm 
+                                API={API} 
+                                menu={menu} 
+                                navigate={navigate} 
+                                refreshGroceries={refreshGroceries}/>} 
                 />
                 <Route
                     path="/"
                     element={
                         <>
-                            <Search onSearch={handleSearch} />
-                            <Fridge groceries={searchGroceries} />
+                            <Search 
+                                onSearch={handleSearch} />
+                            <Fridge 
+                                groceries={searchGroceries} />
                             
                         </>
                     }

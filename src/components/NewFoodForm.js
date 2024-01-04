@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import Emoji from './Emoji';
 
 
-function NewFoodForm( { API, menu, navigate } ){
+function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
 
  const [formData, setFormData] = useState({
     "name": "",
@@ -40,9 +40,8 @@ function NewFoodForm( { API, menu, navigate } ){
       image: newImage.textContent
     });
   };
-
-  // // Event handler for form submission
-    const handleSubmit = (event) => {
+  
+  const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Form submitted with data:', formData);
   
@@ -53,6 +52,7 @@ function NewFoodForm( { API, menu, navigate } ){
     })
     .then(response => {
       if (response.ok) {
+        refreshGroceries()
         navigate('/');
       } else {
         throw new Error('Network response was not ok.');
