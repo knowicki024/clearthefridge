@@ -22,8 +22,10 @@ function handleClick(){
 
     return (
         <div className='Fridge'>
-            {/* <img className='fridge-img' alt = "open fridge" src="https://media.discordapp.net/attachments/1187512873015062528/1187769590130933780/Image.png?ex=659817a1&is=6585a2a1&hm=73b4d0ab2ada80867b095feebecc69209d7c5d60db73c5a8ae00e2e0cca01790&=&format=webp&quality=lossless&width=620&height=662"/> */}
-            <div className="food-cards">{foodCards}</div>
+            <img className='fridge-img' alt = "open fridge" src="https://media.discordapp.net/attachments/1187512873015062528/1192266055813447720/fridge-pink.png?ex=65a8734a&is=6595fe4a&hm=5312e43e9cefb65110dd6c393552ed80dd385e02ca4fb83f5d32d81d9003dc05&=&format=webp&quality=lossless&width=620&height=662"/>
+            <div className='fridge-layout'>
+                <div className="food-cards">{foodCards}</div>
+            </div>           
             <button className="get-groceries" onClick={handleClick}>Get groceries</button>
         </div>
     )

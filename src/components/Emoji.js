@@ -4,7 +4,6 @@ import React from "react";
 function Emoji({ emoji, returnFunction }) {
 
   function handleClick(event) {
-    console.log(event.target);
     returnFunction(event.target)
   }
 

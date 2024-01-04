@@ -126,33 +126,6 @@
       "spoiled": false,
       "note": "Cook until crispy for a delicious breakfast side."
     },
-    {
-      "id": 17,
-      "name": "Babe",
-      "category": "",
-      "image": "🍈",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
-    },
-    {
-      "name": "yellow onion",
-      "category": "",
-      "image": "🧅",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "diced and ready to cook",
-      "id": 19
-    },
-    {
-      "name": "baguette",
-      "category": "",
-      "image": "🥖",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "fresh baked",
-      "id": 21
-    }
   ],
   "menu": [
     {
