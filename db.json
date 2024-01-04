@@ -97,7 +97,16 @@
       "image": "🍞",
       "purchase_date": "12/29/2023",
       "spoiled": false,
-      "note": "Perfect for making sandwiches for lunch."
+      "note": "Perfect for making sandwiches for lunch. And so much more!"
+    },
+    {
+      "id": 12,
+      "name": "Romaine",
+      "category": "Produce",
+      "image": "🥬",
+      "purchase_date": "11/29/2023",
+      "spoiled": false,
+      "note": "Ideal for salads or as a crunchy lettuce wrap."
     },
     {
       "id": 13,
@@ -109,6 +118,7 @@
       "note": "Use for baking or spread on warm toast."
     },
     {
+
       "id": 14,
       "name": "Breakfast Burrito",
       "category": "Leftovers & Snacks",
@@ -125,15 +135,6 @@
       "purchase_date": "12/25/2023",
       "spoiled": false,
       "note": "Cook until crispy for a delicious breakfast side."
-    },
-    {
-      "id": 17,
-      "name": "Babe",
-      "category": "",
-      "image": "🍈",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
     },
     {
       "name": "yellow onion",
@@ -161,6 +162,17 @@
       "spoiled": false,
       "note": "so spicy",
       "id": 22
+      "spoiled": true,
+      "note": "Unfortunately, this babe has spoiled. Dispose of it."
+    },
+    {
+      "id": 17,
+      "name": "Babe",
+      "category": "",
+      "image": "🍈",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
     }
   ],
   "menu": [
