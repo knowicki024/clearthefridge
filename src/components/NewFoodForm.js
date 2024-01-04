@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import { Grid, GridColumn, GridRow } from 'semantic-ui-react';
 import Emoji from './Emoji';
 
 
@@ -63,67 +64,65 @@ function NewFoodForm( { API, menu } ){
     const emojiDisplay = menu.map((emoji) => (
         <Emoji key={emoji.id} emoji={emoji} returnFunction={updateImage} />
         ));
-
+//style={{ marginRight: '50px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <div style={{ width: '25%' }}>
-      <div className='emoji-container'>
-        {formData.image === "" ? (
-           <span className='emoji'>🛒</span>
-        ) : (
-          <span className='emoji'>{formData.image}</span>
-        )}
-      </div>
-
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>
-            Food Name:
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
-
-        <div>
-          <label>
-            Post-it Note:
-            <input
-              type="text"
-              name="note"
-              value={formData.note}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
-
-        <div>
-          <label>
-            Time To Spoil:
-            <input
-              type="checkbox"
-              name="timeToSpoil"
-              checked={formData.timeToSpoil}
-              onChange={toggleSpoiled}
-            />
-          </label>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
+<div className="form-display">
+  <div className="form-left form-left-offset">
+    <div className='form-container'>
+      {formData.image === "" ? (
+        <span className='emoji'>🛒</span>
+      ) : (
+        <span className='emoji'>{formData.image}</span>
+      )}
     </div>
 
-    <div style={{ width: '40%', paddingLeft: '20px' }}>
-      <div className='emoji-container'>
-        <div className='emoji-grid'>
-          {emojiDisplay}
-        </div>
+    <form onSubmit={handleSubmit}>
+      <div className="input-group">
+        <label htmlFor="name">Food Name:</label>
+        <input className='input-bar'
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <div className="input-group">
+        <label htmlFor="note">Post-it Note:</label>
+        <textarea className='text-area'
+          type="text"
+          id="note"
+          name="note"
+          value={formData.note}
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <div className="input-group">
+        <label>
+          Time To Spoil:
+          <input
+            type="checkbox"
+            name="timeToSpoil"
+            checked={formData.timeToSpoil}
+            onChange={toggleSpoiled}
+          />
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div style={{ width: '40%', paddingLeft: '20px' }}>
+    <div className='emoji-container'>
+      <div className='emoji-grid'>
+        {emojiDisplay}
       </div>
     </div>
   </div>
+</div>
 
   );
 }
