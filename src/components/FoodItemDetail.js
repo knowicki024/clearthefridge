@@ -16,9 +16,6 @@ function FoodItemDetail( {handleDelete} ){
         .catch((error) => console.error('Error fetching data:', error));
     }, [id]);
 
-
-
-
 //// EDIT item.note FORM CONSTANTS
     const [isEdit, setIsEdit] = useState(false)
     const [formData, setFormData] = useState(
@@ -109,5 +106,4 @@ function FoodItemDetail( {handleDelete} ){
         
     )
 }
-
 export default FoodItemDetail;
