@@ -100,15 +100,6 @@
       "note": "Perfect for making sandwiches for lunch."
     },
     {
-      "id": 12,
-      "name": "Romaine",
-      "category": "Produce",
-      "image": "🥬",
-      "purchase_date": "11/29/2023",
-      "spoiled": false,
-      "note": "Ideal for salads or as a crunchy lettuce wrap."
-    },
-    {
       "id": 13,
       "name": "Butter",
       "category": "Dairy",
@@ -135,33 +126,6 @@
       "spoiled": false,
       "note": "Cook until crispy for a delicious breakfast side."
     },
-    {
-      "id": 16,
-      "name": "Babe",
-      "category": "",
-      "image": "🍈",
-      "purchase_date": "",
-      "spoiled": true,
-      "note": "Unfortunately, this babe has spoiled. Dispose of it."
-    },
-    {
-      "id": 17,
-      "name": "Babe",
-      "category": "",
-      "image": "🍈",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
-    },
-    {
-      "name": "Green pepper",
-      "category": "",
-      "image": "🫑",
-      "purchase_date": "",
-      "spoiled": true,
-      "note": "It's green!",
-      "id": 18
-    }
   ],
   "menu": [
     {

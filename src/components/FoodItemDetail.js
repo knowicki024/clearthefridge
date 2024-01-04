@@ -1,12 +1,11 @@
 import { React, useState, useEffect } from 'react';
-import { Grid } from "semantic-ui-react";
 import { useParams } from "react-router-dom"
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 const API = " http://localhost:3000/groceries"
 
 function FoodItemDetail( {handleDelete} ){
     let { id } = useParams();
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const [itemData, setItemData] = useState({});
 
     useEffect(() => {
@@ -15,7 +14,7 @@ function FoodItemDetail( {handleDelete} ){
         .then((response) => response.json())
         .then(setItemData)
         .catch((error) => console.error('Error fetching data:', error));
-    }, [id,API]);
+    }, [id]);
 
 
 
@@ -67,48 +66,45 @@ function FoodItemDetail( {handleDelete} ){
     
     return (
         <>
-       <div className='food-display'>
-            <Grid columns={3}>
-                <Grid.Row>
-                    <Grid.Column width={7}>
-                        <div className='emoji-container'>
-                            <span className='emoji'>{itemData.image}</span>
-                        </div>
-                    </Grid.Column>
-                    <Grid.Column width={1}></Grid.Column>
-                    <Grid.Column width={7}>
-                        {isEdit ?
-                        <form>
-                            <input
-                            type="text"
-                            name="note"
-                            value={formData.note}
-                            onChange={handleInputChange}/>
-                            <button 
-                            type="submit"
-                            onClick={handleSubmit}
-                            >Post-it</button>
-                        </form>
-                        :
-                        <Grid.Row>
-                            {itemData.spoiled ? <h2>{itemData.name} 🤢</h2> : <h2>{itemData.name}</h2>}
-                            <p>Post-it: {itemData.note}</p>
-                            <Grid.Row>
-                                <p>Purchase Time: {itemData.purchase_date}</p>
-                            </Grid.Row>
-                            <Grid.Row>
-                                <p></p>
-                            </Grid.Row>
-                            <button onClick={toggleEdit}>Edit Note</button>
-                        </Grid.Row>}
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-        </div>
-        <div className='button-container'>
-            <button className='food-button' onClick={handleDeleteClick}>🗑️</button>
-            <button className='food-button' onClick={handleDeleteClick}>🍽️</button>
-        </div>
+<div className='food-display'>
+  <div className='emoji-container'>
+    <span className='emoji food-left-offset'>{itemData.image}</span>
+  </div>
+  
+  {isEdit ? (
+    <form>
+      <textarea
+        className='text-area-edit'
+        type="text"
+        name="note"
+        value={formData.note}
+        onChange={handleInputChange}
+      />
+      <button
+      className='post-it-button'
+        type="button"
+        onClick={handleSubmit}
+      >
+        Post-it
+      </button>
+    </form>
+  ) : (
+    <div className='food-info'>
+      {itemData.spoiled ? (
+        <h2>{itemData.name} 🤢</h2>
+      ) : (
+        <h2>{itemData.name}</h2>
+      )}
+      <p>Post-it: {itemData.note}</p>
+      <p>Purchase Time: {itemData.purchase_date}</p>
+      <button onClick={toggleEdit}>Edit Post-it</button>
+    </div>
+  )}
+</div>
+<div className='button-container'>
+  <button className='food-button' onClick={handleDeleteClick}>🗑️</button>
+  <button className='food-button' onClick={handleDeleteClick}>🍽️</button>
+</div>
     </>
         
     )
