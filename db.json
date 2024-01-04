@@ -118,6 +118,16 @@
       "note": "Use for baking or spread on warm toast."
     },
     {
+
+      "id": 14,
+      "name": "Breakfast Burrito",
+      "category": "Leftovers & Snacks",
+      "image": "🌯",
+      "purchase_date": "11/29/2023",
+      "spoiled": false,
+      "note": "Microwave for a quick and hearty breakfast."
+    },
+    {
       "id": 15,
       "name": "Bacon",
       "category": "Meat & Poultry",
@@ -127,11 +137,31 @@
       "note": "Cook until crispy for a delicious breakfast side."
     },
     {
-      "id": 16,
-      "name": "Babe",
+      "name": "yellow onion",
       "category": "",
-      "image": "🍈",
+      "image": "🧅",
       "purchase_date": "",
+      "spoiled": false,
+      "note": "diced and ready to cook",
+      "id": 19
+    },
+    {
+      "name": "baguette",
+      "category": "",
+      "image": "🥖",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "fresh baked",
+      "id": 21
+    },
+    {
+      "name": "ghost chili",
+      "category": "",
+      "image": "🌶",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "so spicy",
+      "id": 22
       "spoiled": true,
       "note": "Unfortunately, this babe has spoiled. Dispose of it."
     },
