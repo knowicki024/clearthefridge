@@ -173,6 +173,15 @@
       "purchase_date": "",
       "spoiled": false,
       "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
+    },
+    {
+      "name": "",
+      "category": "",
+      "image": "🌶",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "",
+      "id": 19
     }
   ],
   "menu": [

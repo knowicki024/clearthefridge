@@ -73,9 +73,9 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
   <div className="form-left form-left-offset">
     <div className='form-container'>
       {formData.image === "" ? (
-        <span className='emoji'>🛒</span>
+        <span className='emoji emoji-form'>🛒</span>
       ) : (
-        <span className='emoji'>{formData.image}</span>
+        <span className='emoji emoji-form'>{formData.image}</span>
       )}
     </div>
 
@@ -102,19 +102,26 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
         />
       </div>
 
-      <div className="input-group">
-        <label>
-          Time To Spoil:
-          <input
-            type="checkbox"
-            name="timeToSpoil"
-            checked={formData.timeToSpoil}
-            onChange={toggleSpoiled}
-          />
-        </label>
-      </div>
+  <div className="input-group">
+    <label htmlFor="name">Category:</label>
+      <select className="input-bar">
+        <option value="Dairy">Dairy</option>
+        <option value="Produce">Produce</option>
+        <option value="Leftovers & Snacks">Leftovers & Snacks</option>
+        <option value="Meat & Poultry">Meat & Poultry</option>
+      </select>
+  </div>    
 
-      <button type="submit">Submit</button>
+
+
+    <div className='input-group'>
+      <label>
+        <input 
+        type="date" 
+        value="2017-06-01" />
+      </label>
+    </div>
+   <button type="submit">Submit</button>
     </form>
   </div>
 
