@@ -25,13 +25,13 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
     });
   };
 
-  function toggleSpoiled(){
-    setIsSpoiled(!isSpoiled)
-    setFormData({
-        ...formData,
-        spoiled: !isSpoiled,
-      });
-  }
+  // function toggleSpoiled(){
+  //   setIsSpoiled(!isSpoiled)
+  //   setFormData({
+  //       ...formData,
+  //       spoiled: !isSpoiled,
+  //     });
+  // }
 
   const updateImage = (newImage) => {
     console.log(`New Image: ${newImage.textContent}`)
@@ -118,7 +118,7 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
       <label>
         <input 
         type="date" 
-        value="2017-06-01" />
+        value="" />
       </label>
     </div>
    <button type="submit">Submit</button>
