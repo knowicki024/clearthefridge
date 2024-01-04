@@ -1,23 +1,30 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import Emoji from './Emoji';
 
 
 function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
+ 
+  //// CONSTANTS ////
+  const [previousFoodItemName, setPreviousFoodItemName] = useState("")
 
- const [formData, setFormData] = useState({
-    "name": "",
-    "category": "",
-    "image" : "",
-    "purchase_date": "",
-    "spoiled" : false, 
-    "note": ""
-  });
+  const [formData, setFormData] = useState({
+      "name": "",
+      "category": "",
+      "image" : "",
+      "purchase_date": "",
+      "spoiled" : false, 
+      "note": ""
+    });
 
-  const [isSpoiled, setIsSpoiled] = useState(false)
+  const emojiDisplay = menu.map((emoji) => (
+    <Emoji key={emoji.id} emoji={emoji} returnFunction={updateFormValues} />
+    ));
 
+ //// FUNCTIONS ////
 
-  // Event handler for input changes
+ ////Input Change
   const handleInputChange = (event) => {
+    console.log(event.target.value)
     const { name, value } = event.target;
     setFormData({
       ...formData,
@@ -25,25 +32,37 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
     });
   };
 
-  function toggleSpoiled(){
-    setIsSpoiled(!isSpoiled)
-    setFormData({
-        ...formData,
-        spoiled: !isSpoiled,
-      });
-  }
+//// Fills in form details when image is picked
+  function updateFormValues(newImage) {
+    fetch(`http://localhost:3000/menu/${newImage.id}`)
+      .then(response => response.json())
+      .then(fooditem => {
+        document.getElementById('image').textContent = fooditem.image;
+        document.getElementById('category').value = fooditem.category;
 
-  const updateImage = (newImage) => {
-    console.log(`New Image: ${newImage.textContent}`)
-    setFormData({
-      ...formData,
-      image: newImage.textContent
-    });
-  };
+        let intraFormData = {
+          ...formData,
+          "name": formData.name,
+          "category": fooditem.category,
+          "image" : fooditem.image,
+        }
+
+        let nameInput = document.getElementById('name').value
+        if (nameInput === ""|| nameInput === previousFoodItemName){ 
+          document.getElementById('name').value = fooditem.name;
+          intraFormData = {
+            ...intraFormData,
+            'name': fooditem.name,
+        }}
+
+        setPreviousFoodItemName(fooditem.name)
+        setFormData(intraFormData)
+        });
+  }
   
+//// Submit Form
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Form submitted with data:', formData);
   
     fetch(API, {
       method: "POST",
@@ -54,29 +73,21 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
       if (response.ok) {
         refreshGroceries()
         navigate('/');
-      } else {
-        throw new Error('Network response was not ok.');
-      }
+      } else {throw new Error('Network response was not ok.')}
     })
     .catch(error => {
       console.error('Error:', error);
     });
   }
   
-
-    const emojiDisplay = menu.map((emoji) => (
-        <Emoji key={emoji.id} emoji={emoji} returnFunction={updateImage} />
-        ));
-//style={{ marginRight: '50px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
   return (
 <div className="form-display">
   <div className="form-left form-left-offset">
     <div className='form-container'>
       {formData.image === "" ? (
-        <span className='emoji emoji-form'>🛒</span>
+        <span id='image'className='emoji emoji-form'>🛒</span>
       ) : (
-        <span className='emoji emoji-form'>{formData.image}</span>
-      )}
+        <span id='image'className='emoji emoji-form'>{formData.image}</span>)}
     </div>
 
     <form onSubmit={handleSubmit}>
@@ -104,24 +115,32 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
 
   <div className="input-group">
     <label htmlFor="name">Category:</label>
-      <select className="input-bar">
+      <select 
+      id="category"
+      name="category"
+      className="input-bar"
+      onChange={handleInputChange}>
         <option value="Dairy">Dairy</option>
         <option value="Produce">Produce</option>
         <option value="Leftovers & Snacks">Leftovers & Snacks</option>
         <option value="Meat & Poultry">Meat & Poultry</option>
+        <option value="Baked Good">Baked Good</option>
       </select>
   </div>    
 
-
-
     <div className='input-group'>
-      <label>
+      <label>  </label>
         <input 
-        type="date" 
-        value="2017-06-01" />
-      </label>
+           type='date'
+           id='purchase_date'
+           name='purchase_date'
+           value={formData.purchase_date || new Date().toISOString().split('T')[0]}
+           onChange={handleInputChange}
+           />
+    
     </div>
-   <button type="submit">Submit</button>
+    <label>  </label>
+      <button type="submit">Submit</button>
     </form>
   </div>
 
@@ -133,7 +152,6 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
     </div>
   </div>
 </div>
-
   );
 }
 

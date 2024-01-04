@@ -4,7 +4,7 @@ import React from "react";
 function Emoji({ emoji, returnFunction }) {
 
   function handleClick(event) {
-    console.log(event.target);
+    //console.log(event.target);
     returnFunction(event.target)
   }
 
@@ -12,6 +12,6 @@ function Emoji({ emoji, returnFunction }) {
     <button id={emoji.id} className="emoji-grid-button" onClick={handleClick}>
       {emoji.image}
     </button>
-  );
+  ); 
 }
 export default Emoji;

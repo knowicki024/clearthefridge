@@ -118,7 +118,6 @@
       "note": "Use for baking or spread on warm toast."
     },
     {
-
       "id": 14,
       "name": "Breakfast Burrito",
       "category": "Leftovers & Snacks",
@@ -137,15 +136,6 @@
       "note": "Cook until crispy for a delicious breakfast side."
     },
     {
-      "name": "yellow onion",
-      "category": "",
-      "image": "🧅",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "diced and ready to cook",
-      "id": 19
-    },
-    {
       "name": "baguette",
       "category": "",
       "image": "🥖",
@@ -162,8 +152,6 @@
       "spoiled": false,
       "note": "so spicy",
       "id": 22
-      "spoiled": true,
-      "note": "Unfortunately, this babe has spoiled. Dispose of it."
     },
     {
       "id": 17,
@@ -182,188 +170,350 @@
       "spoiled": false,
       "note": "",
       "id": 19
+    },
+    {
+      "name": "Croissant",
+      "category": "Baked Good",
+      "image": "🥐",
+      "purchase_date": "2024-01-17",
+      "spoiled": false,
+      "note": "yummy",
+      "id": 23
+    },
+    {
+      "name": "Garlic",
+      "category": "Produce",
+      "image": "🧄",
+      "purchase_date": "2024-01-16",
+      "spoiled": false,
+      "note": "anit-vampire",
+      "id": 24
+    },
+    {
+      "name": "Eggplant",
+      "category": "Produce",
+      "image": "🍆",
+      "purchase_date": "2024-01-15",
+      "spoiled": false,
+      "note": " ",
+      "id": 25
     }
   ],
   "menu": [
     {
       "id": 1,
-      "image": "🍎"
+      "image": "🍎",
+      "name": "Apple",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 2,
-      "image": "🍐"
+      "image": "🍐",
+      "name": "Pear",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 3,
-      "image": "🍊"
+      "image": "🍊",
+      "name": "Orange",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 4,
-      "image": "🍋"
+      "image": "🍋",
+      "name": "Lemon",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 5,
-      "image": "🍌"
+      "image": "🍌",
+      "name": "Banana",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 6,
-      "image": "🍉"
+      "image": "🍉",
+      "name": "Watermelon",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 7,
-      "image": "🍇"
+      "image": "🍇",
+      "name": "Grapes",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 8,
-      "image": "🍓"
+      "image": "🍓",
+      "name": "Strawberry",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 9,
-      "image": "🫐"
+      "image": "🫐",
+      "name": "Blueberry",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 10,
-      "image": "🍈"
+      "image": "🍈",
+      "name": "Melon",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 11,
-      "image": "🍒"
+      "image": "🍒",
+      "name": "Cherry",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 12,
-      "image": "🍑"
+      "image": "🍑",
+      "name": "Peach",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 13,
-      "image": "🥭"
+      "image": "🥭",
+      "name": "Mango",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 14,
-      "image": "🍍"
+      "image": "🍍",
+      "name": "Pineapple",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 15,
-      "image": "🥝"
+      "image": "🥝",
+      "name": "Kiwi",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 16,
-      "image": "🍅"
+      "image": "🍅",
+      "name": "Tomato",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 17,
-      "image": "🍆"
+      "image": "🍆",
+      "name": "Eggplant",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 18,
-      "image": "🥑"
+      "image": "🥑",
+      "name": "Avocado",
+      "category": "Produce",
+      "days_to_spoil": 3
     },
     {
       "id": 19,
-      "image": "🥦"
+      "image": "🥦",
+      "name": "Broccoli",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 20,
-      "image": "🥬"
+      "image": "🥬",
+      "name": "Leafy Greens",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 21,
-      "image": "🥒"
+      "image": "🥒",
+      "name": "Cucumber",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 22,
-      "image": "🌶"
+      "image": "🌶",
+      "name": "Chili Pepper",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 23,
-      "image": "🫑"
+      "image": "🫑",
+      "name": "Bell Pepper",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 24,
-      "image": "🌽"
+      "image": "🌽",
+      "name": "Corn",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 25,
-      "image": "🥕"
+      "image": "🥕",
+      "name": "Carrot",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 26,
-      "image": "🧄"
+      "image": "🧄",
+      "name": "Garlic",
+      "category": "Produce",
+      "days_to_spoil": 90
     },
     {
       "id": 27,
-      "image": "🧅"
+      "image": "🧅",
+      "name": "Onion",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 28,
-      "image": "🥔"
+      "image": "🥔",
+      "name": "Potato",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 29,
-      "image": "🍠"
+      "image": "🍠",
+      "name": "Sweet Potato",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 30,
-      "image": "🫘"
+      "image": "🫘",
+      "name": "Turnip",
+      "category": "Produce",
+      "days_to_spoil": 5
     },
     {
       "id": 31,
-      "image": "🥐"
+      "image": "🥐",
+      "name": "Croissant",
+      "category": "Baked Good",
+      "days_to_spoil": 7
     },
     {
       "id": 32,
-      "image": "🥯"
+      "image": "🥯",
+      "name": "Bagel",
+      "category": "Baked Good",
+      "days_to_spoil": 7
     },
     {
       "id": 33,
-      "image": "🍞"
+      "image": "🍞",
+      "name": "Bread",
+      "category": "Baked Good",
+      "days_to_spoil": 7
     },
     {
       "id": 34,
-      "image": "🥖"
+      "image": "🥖",
+      "name": "Baguette",
+      "category": "Baked Good",
+      "days_to_spoil": 7
     },
     {
       "id": 35,
-      "image": "🥨"
+      "image": "🥨",
+      "name": "Pretzel",
+      "category": "Baked Good",
+      "days_to_spoil": 7
     },
     {
       "id": 36,
-      "image": "🧀"
+      "image": "🧀",
+      "name": "Cheese",
+      "category": "Dairy",
+      "days_to_spoil": 7
     },
     {
       "id": 37,
-      "image": "🥚"
+      "image": "🥚",
+      "name": "Egg",
+      "category": "Dairy",
+      "days_to_spoil": 7
     },
     {
       "id": 38,
-      "image": "🍳"
+      "image": "🍳",
+      "name": "Cooking Egg",
+      "category": "Dairy",
+      "days_to_spoil": 7
     },
     {
       "id": 39,
-      "image": "🧈"
+      "image": "🧈",
+      "name": "Butter",
+      "category": "Dairy",
+      "days_to_spoil": 7
     },
     {
       "id": 40,
-      "image": "🥞"
+      "image": "🥞",
+      "name": "Pancakes",
+      "category": "Dairy",
+      "days_to_spoil": 7
     },
     {
       "id": 41,
-      "image": "🧇"
+      "image": "🧇",
+      "name": "Waffle",
+      "category": "Baked Good",
+      "days_to_spoil": 7
     },
     {
       "id": 42,
-      "image": "🥓"
+      "image": "🥓",
+      "name": "Bacon",
+      "category": "Meat & Poultry",
+      "days_to_spoil": 7
     },
     {
       "id": 43,
-      "image": "🥩"
+      "image": "🥩",
+      "name": "Steak",
+      "category": "Meat & Poultry",
+      "days_to_spoil": 7
     },
     {
       "id": 44,
-      "image": "🍗"
+      "image": "🍗",
+      "name": "Chicken",
+      "category": "Meat & Poultry",
+      "days_to_spoil": 7
     },
     {
       "id": 45,
-      "image": "🥡"
+      "image": "🥡",
+      "name": "Takeout",
+      "category": "Leftovers & Snacks",
+      "days_to_spoil": 7
     }
   ]
 }
