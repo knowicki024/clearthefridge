@@ -105,6 +105,10 @@ code {
   transform: translateX(10px); 
 }
 
+.emoji-form {
+  transform: translateY(10px); 
+}
+
 .food-description {
   display: flex;
   align-items: center;
@@ -116,7 +120,7 @@ code {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  width: 450px; 
+  width: 600px; 
   margin: 0 auto;
   margin-top: 15px
 }
@@ -159,7 +163,7 @@ code {
   align-items: center; 
   justify-content: center; 
   width: 600px; 
-  height:475px;
+  height: 500px;
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px; 
@@ -187,6 +191,16 @@ code {
 
 .form-left-offset {
   margin-right: 70px;
+}
+
+.form-submit-button {
+  width: 600px;
+  height: 50px;
+  margin: 0 auto; /* Adjust the top margin if needed */
+  border: 1px solid #d4d4d5;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 .input-group {
