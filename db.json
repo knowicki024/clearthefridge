@@ -100,6 +100,15 @@
       "note": "Perfect for making sandwiches for lunch."
     },
     {
+      "id": 12,
+      "name": "Romaine",
+      "category": "Produce",
+      "image": "🥬",
+      "purchase_date": "11/29/2023",
+      "spoiled": false,
+      "note": "Ideal for salads or as a crunchy lettuce wrap."
+    },
+    {
       "id": 13,
       "name": "Butter",
       "category": "Dairy",
@@ -127,31 +136,11 @@
       "note": "Cook until crispy for a delicious breakfast side."
     },
     {
-      "name": "yellow onion",
+      "id": 16,
+      "name": "Babe",
       "category": "",
-      "image": "🧅",
+      "image": "🍈",
       "purchase_date": "",
-      "spoiled": false,
-      "note": "diced and ready to cook",
-      "id": 19
-    },
-    {
-      "name": "baguette",
-      "category": "",
-      "image": "🥖",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "fresh baked",
-      "id": 21
-    },
-    {
-      "name": "ghost chili",
-      "category": "",
-      "image": "🌶",
-      "purchase_date": "",
-      "spoiled": false,
-      "note": "so spicy",
-      "id": 22
       "spoiled": true,
       "note": "Unfortunately, this babe has spoiled. Dispose of it."
     },
@@ -165,13 +154,13 @@
       "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
     },
     {
-      "name": "",
+      "name": "Green pepper",
       "category": "",
-      "image": "🌶",
+      "image": "🫑",
       "purchase_date": "",
-      "spoiled": false,
-      "note": "",
-      "id": 19
+      "spoiled": true,
+      "note": "It's green!",
+      "id": 18
     }
   ],
   "menu": [
