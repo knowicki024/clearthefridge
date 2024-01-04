@@ -13,7 +13,7 @@ const openFoodItem = (foodItemId) => {
 };
 
 const foodCards = groceries.map((grocery) => (
-<Emoji key={grocery.id} emoji={grocery} returnFunction={openFoodItem} />
+<Emoji key={grocery.id} emoji={grocery} returnFunction={openFoodItem} groceryName={grocery.name}/>
 ))
 
 function handleClick(){

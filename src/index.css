@@ -57,16 +57,26 @@ code {
 }
 
 .fridge-layout {
-  transform: translateX(1px) translateY(-500px);
+  transform: translateX(-10px) translateY(-490px);
 }
 
-.get-groceries {
+.get-groceries  {
   transform: translateX(1px) translateY(-200px);
   font-size: 28px;
   border-radius: 12px;
   background: whitesmoke;
   border: outset 8px rgb(248, 155, 171);
   padding: 10px;
+}
+
+.search-bar {
+  transform: translateX(1px) translateY(50px);
+  font-size: 28px;
+  border-radius: 12px;
+  background: whitesmoke;
+  border: outset 8px rgb(248, 155, 171);
+  padding: 10px;
+
 }
 
 .food-display {
@@ -156,9 +166,12 @@ code {
   overflow: hidden;
   padding: 5px;
   font-size: 30px;
+  transition: background-color .4s ease;
 }
 
-
+.emoji-grid-button:hover {
+  background: pink;
+}
 
 .form-display {
   display: flex;
@@ -250,4 +263,30 @@ body {
   
     background-size:30px 30px;    
     /* background-position:0 0, 10px 0, 10px -10px, 0px 10px; */
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.emoji-grid-button:hover + .tooltip,
+.tooltip:hover {
+  display: block;
+}
+
+.sub-header {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 24px;
 }

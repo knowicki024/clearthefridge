@@ -135,15 +135,6 @@
       "spoiled": false,
       "note": "Cook until crispy for a delicious breakfast side."
     },
-    {
-      "name": "Watermelon",
-      "category": "Produce",
-      "image": "🍉",
-      "purchase_date": "2024-01-04",
-      "spoiled": false,
-      "note": "",
-      "id": 16
-    }
   ],
   "menu": [
     {
