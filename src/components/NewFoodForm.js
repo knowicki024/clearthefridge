@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import { Grid, GridColumn } from "semantic-ui-react";
 import Emoji from './Emoji';
 
 
@@ -130,4 +129,3 @@ function NewFoodForm( { API, menu } ){
 }
 
 export default NewFoodForm;
-

@@ -19,7 +19,9 @@ code {
 
 .Header {
   background: pink; 
+  border-bottom: solid 5px rgb(248, 155, 171);
 }
+
 .header-content {
   display: flex;
   justify-content: space-evenly;
@@ -44,7 +46,25 @@ code {
 
 .Fridge {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.food-cards {
+  background: url("https://cdn.discordapp.com/attachments/1187512873015062528/1191803438649061406/fridge.png?ex=65a6c472&is=65944f72&hm=28b2df5203c5424792dfc8ee660e790d722bd2e1931657dd5a9297188ba5797c&");
+  width: 720px;
+  height: 710px;
+  padding-right: 250px;
+}
+
+.get-groceries {
+  margin-top: 2em;
+  font-size: 28px;
+  border-radius: 12px;
+  background: whitesmoke;
+  border: outset 8px rgb(248, 155, 171);
+  padding: 10px;
 }
 
 .food-display {
@@ -121,3 +141,13 @@ code {
 }
 
 
+body {
+    background-image:
+    linear-gradient(45deg, pink 25%, transparent 25%), 
+    linear-gradient(-45deg, pink 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, pink 75%),
+    linear-gradient(-45deg, transparent 75%, pink 75%);
+  
+    background-size:30px 30px;    
+    /* background-position:0 0, 10px 0, 10px -10px, 0px 10px; */
+}

@@ -14,6 +14,4 @@ function Emoji({ emoji, returnFunction }) {
     </button>
   );
 }
-
-
 export default Emoji;
