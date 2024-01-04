@@ -52,23 +52,30 @@ function MainPage() {
           })
           .catch((error) => console.error('Error deleting item:', error));          
       }
-    return (
+      return (
         <div>
-            <Search onSearch={handleSearch} />
             <Routes>
                 <Route 
                     path="/fooditem/:id" 
-                    element={<FoodItemDetail handleDelete={handleDelete}/>} />
+                    element={<FoodItemDetail handleDelete={handleDelete}/>} 
+                />
                 <Route
                     path="/newfoodform"
-                    element={<NewFoodForm API={API} menu={menu} />} />
+                    element={<NewFoodForm API={API} menu={menu} />} 
+                />
                 <Route
                     path="/"
-                    element={<Fridge groceries={searchGroceries} />}/>
+                    element={
+                        <>
+                            <Search onSearch={handleSearch} />
+                            <Fridge groceries={searchGroceries} />
+                            
+                        </>
+                    }
+                />
             </Routes>
-
         </div>
     );
-}
+}    
 
 export default MainPage;
