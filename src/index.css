@@ -74,6 +74,7 @@ code {
   width: 450px; 
   min-height: 200px;
   margin: 0 auto;
+  margin-top: 50px;
   padding: 20px; 
   border: 1px solid #d4d4d5; 
   border-radius: 12px; 
@@ -151,6 +152,7 @@ code {
   width: 600px; 
   height:475px;
   margin: 0 auto;
+  margin-top: 50px;
   padding: 20px; 
   border: 1px solid #d4d4d5; 
   border-radius: 12px; 
