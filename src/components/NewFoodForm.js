@@ -1,9 +1,8 @@
 import { React, useState } from 'react';
-import { Grid, GridColumn, GridRow } from 'semantic-ui-react';
 import Emoji from './Emoji';
 
 
-function NewFoodForm( { API, menu } ){
+function NewFoodForm( { API, menu, navigate } ){
 
  const [formData, setFormData] = useState({
     "name": "",
@@ -42,25 +41,29 @@ function NewFoodForm( { API, menu } ){
     });
   };
 
-  // Event handler for form submission
-  const handleSubmit = (event) => {
+  // // Event handler for form submission
+    const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Form submitted with data:', formData);
-
+  
     fetch(API, {
-        method: "POST",
-        headers: {"Content-Type": "application/json",},
-        body: JSON.stringify(formData),
-      })
-        .then(response => {
-          // Handle response (Necessary?)
-          console.log('Response:', response);
-        })
-        .catch(error => {
-          console.error('Error');
-        });
-    }
-    
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(formData),
+    })
+    .then(response => {
+      if (response.ok) {
+        navigate('/');
+      } else {
+        throw new Error('Network response was not ok.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  }
+  
+
     const emojiDisplay = menu.map((emoji) => (
         <Emoji key={emoji.id} emoji={emoji} returnFunction={updateImage} />
         ));

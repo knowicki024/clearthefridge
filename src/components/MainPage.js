@@ -61,7 +61,7 @@ function MainPage() {
                 />
                 <Route
                     path="/newfoodform"
-                    element={<NewFoodForm API={API} menu={menu} />} 
+                    element={<NewFoodForm API={API} menu={menu} navigate={navigate}/>} 
                 />
                 <Route
                     path="/"
