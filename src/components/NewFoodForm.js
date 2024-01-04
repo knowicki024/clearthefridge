@@ -13,7 +13,7 @@ function NewFoodForm( { API, menu, navigate, refreshGroceries } ){
     "note": ""
   });
 
-  const [isSpoiled, setIsSpoiled] = useState(false)
+  // const [isSpoiled, setIsSpoiled] = useState(false)
 
 
   // Event handler for input changes
