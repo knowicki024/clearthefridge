@@ -126,6 +126,15 @@
       "spoiled": false,
       "note": "Cook until crispy for a delicious breakfast side."
     },
+    {
+      "name": "potato",
+      "category": "",
+      "image": "🥔",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "russet",
+      "id": 16
+    }
   ],
   "menu": [
     {
