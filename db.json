@@ -136,7 +136,6 @@
       "note": "Cook until crispy for a delicious breakfast side."
     },
     {
-
       "name": "potato",
       "category": "",
       "image": "🥔",
@@ -162,7 +161,15 @@
       "spoiled": true,
       "note": "It's green!",
       "id": 18
-
+    },
+    {
+      "name": "",
+      "category": "",
+      "image": "",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "",
+      "id": 19
     }
   ],
   "menu": [
