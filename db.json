@@ -6,7 +6,7 @@
       "category": "Produce",
       "image": "🍎",
       "purchase_date": "12/12/2023",
-      "spoiled": true,
+      "spoiled": false,
       "note": "Remember to eat as a healthy snack during work breaks."
     },
     {
@@ -135,6 +135,60 @@
       "spoiled": false,
       "note": "Cook until crispy for a delicious breakfast side."
     },
+    {
+      "name": "potato",
+      "category": "",
+      "image": "🥔",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "russet",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "name": "Babe",
+      "category": "",
+      "image": "🍈",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "A fresh and sweet babe. Enjoy it in a fruit salad."
+    },
+    {
+      "name": "Green pepper",
+      "category": "",
+      "image": "🫑",
+      "purchase_date": "",
+      "spoiled": true,
+      "note": "It's green!",
+      "id": 18
+    },
+    {
+      "name": "",
+      "category": "",
+      "image": "",
+      "purchase_date": "",
+      "spoiled": false,
+      "note": "",
+      "id": 19
+    },
+    {
+      "name": "Cherry",
+      "category": "Produce",
+      "image": "🍒",
+      "purchase_date": "2024-01-04",
+      "spoiled": false,
+      "note": "fresh",
+      "id": 20
+    },
+    {
+      "name": "Croissant",
+      "category": "Baked Good",
+      "image": "🥐",
+      "purchase_date": "2024-01-04",
+      "spoiled": false,
+      "note": "fresh baked",
+      "id": 21
+    }
   ],
   "menu": [
     {

@@ -13,6 +13,8 @@ GITHUB REPO: "https://github.com/knowicki024/clearthefridge"
 
 TRELLO BOARD: "https://trello.com/b/vJ4rF7eM/phase-2-project"
 
+NETLIFY: "https://main--fridge-sweep.netlify.app/"
+
 # COMPONENTS
 
     App component --GP
